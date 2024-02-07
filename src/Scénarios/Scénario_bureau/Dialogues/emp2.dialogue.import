@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://b0wcee6g7dxkv"
+path="res://.godot/imported/emp2.dialogue-763329605bd45a215eb4555a948fa6be.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_bureau/Dialogues/emp2.dialogue"
+dest_files=["res://.godot/imported/emp2.dialogue-763329605bd45a215eb4555a948fa6be.tres"]
+
+[params]
+
+defaults=true

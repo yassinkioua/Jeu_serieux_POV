@@ -1,0 +1,98 @@
+[gd_scene load_steps=4 format=3 uid="uid://cac86fcg1oerl"]
+
+[ext_resource type="Theme" uid="uid://cwq2glc7j11x2" path="res://UI/menu/core/assets/menuTheme.tres" id="1_g3sq1"]
+[ext_resource type="Script" path="res://UI/menu/background/scenes/menu.gd" id="2_h4w6d"]
+[ext_resource type="FontFile" uid="uid://duok8cs18sd6p" path="res://UI/menu/core/assets/Early GameBoy.ttf" id="3_nre8g"]
+
+[node name="mainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("1_g3sq1")
+script = ExtResource("2_h4w6d")
+
+[node name="margin" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 181.0
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 15
+
+[node name="box" type="VBoxContainer" parent="margin"]
+layout_mode = 2
+alignment = 1
+
+[node name="nom_jeu" type="Label" parent="margin/box"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_nre8g")
+theme_override_font_sizes/font_size = 11
+text = "POV
+PERCEPTION OF VIOLENCE"
+horizontal_alignment = 1
+
+[node name="buttons" type="VBoxContainer" parent="margin/box"]
+unique_name_in_owner = true
+layout_mode = 2
+alignment = 1
+
+[node name="start" type="Button" parent="margin/box/buttons"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+focus_neighbor_top = NodePath("../exit")
+focus_neighbor_bottom = NodePath("../tutoriel")
+focus_next = NodePath("../tutoriel")
+focus_previous = NodePath("../exit")
+theme_override_fonts/font = ExtResource("3_nre8g")
+theme_override_font_sizes/font_size = 7
+text = "START "
+flat = true
+
+[node name="tutoriel" type="Button" parent="margin/box/buttons"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+focus_neighbor_top = NodePath("../start")
+focus_neighbor_bottom = NodePath("../options")
+focus_next = NodePath("../options")
+focus_previous = NodePath("../start")
+theme_override_fonts/font = ExtResource("3_nre8g")
+theme_override_font_sizes/font_size = 7
+text = "TUTORIEL"
+flat = true
+
+[node name="options" type="Button" parent="margin/box/buttons"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+focus_neighbor_top = NodePath("../tutoriel")
+focus_neighbor_bottom = NodePath("../exit")
+focus_next = NodePath("../exit")
+focus_previous = NodePath("../tutoriel")
+theme_override_fonts/font = ExtResource("3_nre8g")
+theme_override_font_sizes/font_size = 7
+text = "OPTIONS"
+flat = true
+
+[node name="exit" type="Button" parent="margin/box/buttons"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+focus_neighbor_top = NodePath("../options")
+focus_neighbor_bottom = NodePath("../start")
+focus_next = NodePath("../start")
+focus_previous = NodePath("../options")
+theme_override_fonts/font = ExtResource("3_nre8g")
+theme_override_font_sizes/font_size = 7
+text = "EXIT "
+flat = true
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="pressed" from="margin/box/buttons/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="margin/box/buttons/tutoriel" to="." method="_on_tutoriel_pressed"]
+[connection signal="pressed" from="margin/box/buttons/options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="margin/box/buttons/exit" to="." method="_on_exit_pressed"]

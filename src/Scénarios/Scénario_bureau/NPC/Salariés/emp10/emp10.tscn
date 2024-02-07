@@ -1,0 +1,69 @@
+[gd_scene load_steps=11 format=3 uid="uid://dl8rmrk3c3u7p"]
+
+[ext_resource type="Script" path="res://Scénarios/Scénario_bureau/NPC/Salariés/emp10/emp10.gd" id="1_irus4"]
+[ext_resource type="Texture2D" uid="uid://dbw24cwxm3ptl" path="res://Scénarios/Scénario_bureau/NPC/Salariés/emp10/emp10.png" id="3_lf8tu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7sdh8"]
+atlas = ExtResource("3_lf8tu")
+region = Rect2(0, 128, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5q82"]
+atlas = ExtResource("3_lf8tu")
+region = Rect2(16, 128, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rub7c"]
+atlas = ExtResource("3_lf8tu")
+region = Rect2(32, 128, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rboix"]
+atlas = ExtResource("3_lf8tu")
+region = Rect2(48, 128, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mrsjy"]
+atlas = ExtResource("3_lf8tu")
+region = Rect2(64, 128, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q68dh"]
+atlas = ExtResource("3_lf8tu")
+region = Rect2(80, 128, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2qni0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7sdh8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m5q82")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rub7c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rboix")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mrsjy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q68dh")
+}],
+"loop": true,
+"name": &"sit down",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m0w82"]
+radius = 5.0
+height = 16.0
+
+[node name="emp10" type="StaticBody2D"]
+script = ExtResource("1_irus4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_2qni0")
+animation = &"sit down"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7)
+shape = SubResource("CapsuleShape2D_m0w82")

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://e567p3fu8roc"
+path="res://.godot/imported/spec4.dialogue-df96f31b8341b2ae9ebdb2ac1571ef6c.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_stade/Dialogues/spec4.dialogue"
+dest_files=["res://.godot/imported/spec4.dialogue-df96f31b8341b2ae9ebdb2ac1571ef6c.tres"]
+
+[params]
+
+defaults=true

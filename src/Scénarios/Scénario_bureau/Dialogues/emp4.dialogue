@@ -1,0 +1,7 @@
+~ start
+set VarPrinci.update_talking(true)
+set Data.set_end_dialog(false)
+Romain: *ambitieux* Il faut rester positif, l'histoire va vite se régler. Voilà ce que je sais : 
+do VarPrinci.do_entry()
+set VarPrinci.update_talking(false)
+=> END

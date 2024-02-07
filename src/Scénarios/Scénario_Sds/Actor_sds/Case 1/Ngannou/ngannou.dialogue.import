@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dmla366bwm17a"
+path="res://.godot/imported/ngannou.dialogue-d813096881ab6ed930bbc5ac88a633a3.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_Sds/Actor_sds/Case 1/Ngannou/ngannou.dialogue"
+dest_files=["res://.godot/imported/ngannou.dialogue-d813096881ab6ed930bbc5ac88a633a3.tres"]
+
+[params]
+
+defaults=true

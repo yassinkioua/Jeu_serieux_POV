@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://blfqhcj5xktqt"
+path="res://.godot/imported/supervisor_s.dialogue-747a023ae56766b449710984b5859bcf.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_stade/Superviseur_s/supervisor_s.dialogue"
+dest_files=["res://.godot/imported/supervisor_s.dialogue-747a023ae56766b449710984b5859bcf.tres"]
+
+[params]
+
+defaults=true

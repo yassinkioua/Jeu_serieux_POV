@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://cujypvlno2unc"
+path="res://.godot/imported/thomas.dialogue-2ecf3ff19f06daa5f2a75af685f60dda.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_bureau/Actor_office/Case 1/Thomas/thomas.dialogue"
+dest_files=["res://.godot/imported/thomas.dialogue-2ecf3ff19f06daa5f2a75af685f60dda.tres"]
+
+[params]
+
+defaults=true

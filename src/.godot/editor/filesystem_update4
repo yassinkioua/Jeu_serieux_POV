@@ -1,0 +1,17 @@
+res://Jeu/jeu.tscn
+res://Carte/Bureau/Barriere_bureau.gd
+res://Perso princi/perso_princi.gd
+res://Scénarios/Scénario_stade/Actor/Case 1/Moussa/Moussa.gd
+res://UI/menu/background/scenes/backgroundParallax.gd
+res://UI/menu/background/options_menu.tres
+res://EndGameScreen/end_game.gdshader
+res://UI/tutoriel/tutoriel.tscn
+res://Perso princi/perso_princi.tscn
+res://Perso princi/princi_ui.tres
+res://Perso princi/t.tres
+res://Fiches/button_exit.tres
+res://Fiches/fiche_theme.tres
+res://Notes/button_texture.tres
+res://Notes/Notes.tres
+res://InGameOptions/options_in_game.tres
+res://Perso princi/var_princi.gd

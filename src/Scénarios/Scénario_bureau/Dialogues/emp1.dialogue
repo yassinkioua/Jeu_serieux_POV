@@ -1,0 +1,13 @@
+~ start
+set VarPrinci.update_talking(true)
+set Data.set_end_dialog(false)
+if Data.selectedScenarioCase == "s2_c2"
+	Marcel: Sophie est quelqu'un de très loyale. Voici ce que je sais :
+	do VarPrinci.do_entry()
+	set VarPrinci.update_talking(false)
+	=> END
+elif Data.selectedScenarioCase == "s2_c1"
+	Marcel: Mike est vraiment quelqu'un d'ambitieux. Voici ce que je sais :
+	do VarPrinci.do_entry()
+	set VarPrinci.update_talking(false)
+	=> END

@@ -1,0 +1,13 @@
+~ start
+set VarPrinci.update_talking(true)
+set Data.set_end_dialog(false)
+if Data.selectedScenarioCase == "s1_c1"
+	Bouzman: POURQUOI LE MATCH EST FINI BORDEL ? MAIS NON C'EST PAS POSSIBLE ENCORE JACK? CE QUE JE SAIS ? TIENS !
+	do VarPrinci.do_entry()
+	set VarPrinci.update_talking(false)
+	=> END
+elif Data.selectedScenarioCase == "s1_c2"
+	Bouzman: POURQUOI LE MATCH EST FINI BORDEL ? MAIS NON C'EST PAS POSSIBLE ENCORE PAUL? CE QUE JE SAIS ? TIENS !
+	do VarPrinci.do_entry()
+	set VarPrinci.update_talking(false)
+	=> END

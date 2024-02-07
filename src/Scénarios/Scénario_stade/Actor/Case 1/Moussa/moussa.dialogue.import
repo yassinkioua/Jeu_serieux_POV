@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://cdyp76e4qycj"
+path="res://.godot/imported/moussa.dialogue-2b484826edd28bf6ccbc238dcaf701d7.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_stade/Actor/Case 1/Moussa/moussa.dialogue"
+dest_files=["res://.godot/imported/moussa.dialogue-2b484826edd28bf6ccbc238dcaf701d7.tres"]
+
+[params]
+
+defaults=true

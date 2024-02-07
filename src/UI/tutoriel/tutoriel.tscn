@@ -1,0 +1,209 @@
+[gd_scene load_steps=20 format=3 uid="uid://d051ev6g7df0f"]
+
+[ext_resource type="Shader" path="res://EndGameScreen/end_game.gdshader" id="1_157qs"]
+[ext_resource type="Script" path="res://UI/tutoriel/tutoriel.gd" id="1_eq36f"]
+[ext_resource type="Theme" uid="uid://bpnw0dunptupl" path="res://UI/tutoriel/tutoriel.tres" id="2_jxdkw"]
+[ext_resource type="FontFile" uid="uid://dgcwxm1d3emxm" path="res://Font/Volter__28Goldfish_29.ttf" id="4_jp4h4"]
+[ext_resource type="Texture2D" uid="uid://dr6h261g11a6s" path="res://Assets/Screenshot/Ingame_screen.PNG" id="5_fujti"]
+[ext_resource type="Texture2D" uid="uid://cjck4pb0l26pm" path="res://Assets/Modern UI/left_arrow.png" id="6_lli84"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_np8js"]
+shader = ExtResource("1_157qs")
+shader_parameter/blur = 1.828
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_qjdo1"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2owe8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x0amy"]
+texture = ExtResource("6_lli84")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1me60"]
+texture = ExtResource("6_lli84")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ij2jr"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fjcmo"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tre5a"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2ed68"]
+texture = ExtResource("6_lli84")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_74irg"]
+texture = ExtResource("6_lli84")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o3c5n"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wu3dv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1yntj"]
+
+[node name="tutoriel" type="CanvasLayer"]
+script = ExtResource("1_eq36f")
+metadata/_edit_vertical_guides_ = [21.0, 299.0, 214.0]
+metadata/_edit_horizontal_guides_ = [170.0, 177.0]
+
+[node name="Background" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_np8js")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("CanvasTexture_qjdo1")
+
+[node name="Titre" type="RichTextLabel" parent="Background"]
+layout_mode = 0
+offset_top = 12.0
+offset_right = 320.0
+offset_bottom = 33.0
+theme = ExtResource("2_jxdkw")
+bbcode_enabled = true
+text = "[center] Tutoriel"
+
+[node name="Objectif" type="Panel" parent="Background"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 36.0
+offset_right = 299.0
+offset_bottom = 170.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_2owe8")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Background/Objectif"]
+layout_mode = 0
+offset_right = 111.0
+offset_bottom = 12.0
+theme = ExtResource("2_jxdkw")
+theme_override_fonts/normal_font = ExtResource("4_jp4h4")
+theme_override_font_sizes/normal_font_size = 7
+bbcode_enabled = true
+text = "[color=yellow]Objectif du jeu :[/color]
+
+"
+scroll_active = false
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Background/Objectif"]
+layout_mode = 0
+offset_top = 20.0
+offset_right = 278.0
+offset_bottom = 126.0
+theme = ExtResource("2_jxdkw")
+theme_override_fonts/normal_font = ExtResource("4_jp4h4")
+theme_override_font_sizes/normal_font_size = 5
+bbcode_enabled = true
+text = "	Vous endossez le rôle d'un jeune inspecteur en passe de passer l'examen pour devenir un inspecteur officiel. Votre mission consiste à résoudre divers scénarios de la manière la plus judicieuse possible. Soyez attentif au [color=yellow]comportement et aux réponses [/color]de chaque individu tout au long de votre enquête... Mais attention, si vous ne réusissez pas à obtenir la moyenne sur les trois scénarios, vous devrez abandonner votre vocation !"
+
+[node name="Mapping" type="Panel" parent="Background"]
+visible = false
+layout_mode = 0
+offset_left = 21.0
+offset_top = 36.0
+offset_right = 299.0
+offset_bottom = 170.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_2owe8")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Background/Mapping"]
+layout_mode = 0
+offset_right = 111.0
+offset_bottom = 12.0
+theme = ExtResource("2_jxdkw")
+theme_override_fonts/normal_font = ExtResource("4_jp4h4")
+theme_override_font_sizes/normal_font_size = 7
+bbcode_enabled = true
+text = "[color=yellow]Touche utilisable :[/color]
+
+"
+scroll_active = false
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Background/Mapping"]
+layout_mode = 0
+offset_top = 20.0
+offset_right = 286.0
+offset_bottom = 128.0
+theme = ExtResource("2_jxdkw")
+theme_override_fonts/normal_font = ExtResource("4_jp4h4")
+theme_override_font_sizes/normal_font_size = 5
+bbcode_enabled = true
+text = "[u]MOUVEMENT :[/u]							          [u]PERSONNAGE :[/u]
+
+> AVANCER : Z / UP_ARROW			              > INTERAGIR : E
+> RECULER : S / DOWN_ARROW 		              > COMBAT [color=red]DISPONIBLE UNIQUEMENT EN COMBAT [/color]: R
+> GAUCHE : Q / LEFT_ARROW				      > ZOOM / DEZOOM : MOLETTE / - +
+> RECULER : D / RIGHT_ARROW
+
+[u]OBJETS :[/u]
+
+> AFFICHER LA FICHE : TAB / CLICK SAC
+> AFFICHER LA NOTE : ² / CLICK ETOILE
+> NAVIGUER DANS LA NOTE : & é \"
+
+"
+
+[node name="Indications" type="Panel" parent="Background"]
+visible = false
+layout_mode = 0
+offset_left = 21.0
+offset_top = 36.0
+offset_right = 299.0
+offset_bottom = 170.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_2owe8")
+
+[node name="TextureRect" type="TextureRect" parent="Background/Indications"]
+layout_mode = 0
+offset_left = 22.0
+offset_top = -7.0
+offset_right = 243.0
+offset_bottom = 100.0
+texture = ExtResource("5_fujti")
+expand_mode = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Background/Indications"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 107.0
+offset_right = 241.0
+offset_bottom = 129.0
+theme_override_fonts/normal_font = ExtResource("4_jp4h4")
+theme_override_font_sizes/normal_font_size = 4
+bbcode_enabled = true
+text = "Les dialogues ne sont pas aléatoires ; ils constituent la principale source d'information pour comprendre le déroulement du scénario. En plus de fournir des indices sur l'état émotionnel des personnages, ils sont essentiels pour saisir l'ensemble de la situation. 
+Par conséquent, [color=yellow]il est crucial de ne pas les négliger. [/color]"
+
+[node name="exit" type="Button" parent="Background"]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 169.0
+offset_right = 206.0
+offset_bottom = 177.0
+theme = ExtResource("2_jxdkw")
+text = "Revenir vers le menu"
+
+[node name="skip" type="Button" parent="Background"]
+layout_mode = 0
+offset_left = 219.0
+offset_top = 176.0
+offset_right = 225.0
+offset_bottom = 181.0
+rotation = 3.14159
+theme_override_styles/normal = SubResource("StyleBoxTexture_x0amy")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1me60")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ij2jr")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_fjcmo")
+theme_override_styles/focus = SubResource("StyleBoxTexture_tre5a")
+
+[node name="last" type="Button" parent="Background"]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 171.0
+offset_right = 124.0
+offset_bottom = 176.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_2ed68")
+theme_override_styles/hover = SubResource("StyleBoxTexture_74irg")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_o3c5n")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_wu3dv")
+theme_override_styles/focus = SubResource("StyleBoxTexture_1yntj")
+
+[connection signal="pressed" from="Background/exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Background/skip" to="." method="_on_skip_pressed"]
+[connection signal="pressed" from="Background/last" to="." method="_on_last_pressed"]

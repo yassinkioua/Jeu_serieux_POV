@@ -1,0 +1,133 @@
+[gd_scene load_steps=21 format=3 uid="uid://3j8payljbneh"]
+
+[ext_resource type="Script" path="res://Scénarios/Scénario_Sds/NPC/Sportif/Sportif4/sportif4.gd" id="1_ns0o8"]
+[ext_resource type="Texture2D" uid="uid://daitoopd1mvfy" path="res://Scénarios/Scénario_Sds/NPC/Sportif/Sportif4/sportif4.png" id="2_5g2ic"]
+[ext_resource type="Script" path="res://Scénarios/Scénario_Sds/NPC/Sportif/Sportif4/sportif4_area.gd" id="3_flt88"]
+[ext_resource type="Resource" uid="uid://m651du14wf21" path="res://Scénarios/Scénario_Sds/Dialogues/sportif4.dialogue" id="4_ede3u"]
+[ext_resource type="PackedScene" uid="uid://bnp13w1xfbo2u" path="res://PnjUI/pnjui.tscn" id="5_pq7lj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vis46"]
+atlas = ExtResource("2_5g2ic")
+region = Rect2(96, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2weqi"]
+atlas = ExtResource("2_5g2ic")
+region = Rect2(112, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y2ank"]
+atlas = ExtResource("2_5g2ic")
+region = Rect2(128, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jmp67"]
+atlas = ExtResource("2_5g2ic")
+region = Rect2(144, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dyilg"]
+atlas = ExtResource("2_5g2ic")
+region = Rect2(160, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a74u5"]
+atlas = ExtResource("2_5g2ic")
+region = Rect2(176, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m73do"]
+atlas = ExtResource("2_5g2ic")
+region = Rect2(288, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m4wrv"]
+atlas = ExtResource("2_5g2ic")
+region = Rect2(304, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_64h52"]
+atlas = ExtResource("2_5g2ic")
+region = Rect2(320, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_asi5b"]
+atlas = ExtResource("2_5g2ic")
+region = Rect2(336, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qvqum"]
+atlas = ExtResource("2_5g2ic")
+region = Rect2(352, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gbv4v"]
+atlas = ExtResource("2_5g2ic")
+region = Rect2(368, 32, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2qni0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vis46")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2weqi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y2ank")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jmp67")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dyilg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a74u5")
+}],
+"loop": true,
+"name": &"back",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m73do")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m4wrv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_64h52")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_asi5b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qvqum")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gbv4v")
+}],
+"loop": true,
+"name": &"front",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m0w82"]
+radius = 5.0
+height = 16.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mg3tj"]
+
+[node name="sportif4" type="StaticBody2D"]
+script = ExtResource("1_ns0o8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_2qni0")
+animation = &"front"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7)
+shape = SubResource("CapsuleShape2D_m0w82")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 17
+script = ExtResource("3_flt88")
+dialogue_ressource = ExtResource("4_ede3u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 5)
+shape = SubResource("CircleShape2D_mg3tj")
+
+[node name="pnjui" parent="." instance=ExtResource("5_pq7lj")]
+visible = false

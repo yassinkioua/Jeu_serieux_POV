@@ -1,0 +1,178 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="t3-gourdon-boade-kioua"
+run/main_scene="res://Jeu/jeu.tscn"
+config/features=PackedStringArray("4.1")
+config/icon="res://Assets/Modern UI/Portrait/portrait.png"
+
+[audio]
+
+buses/default_bus_layout="res://Sound/default_bus_layout.tres"
+
+[autoload]
+
+Data="*res://Data/data.gd"
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+VarPrinci="*res://Perso princi/var_princi.gd"
+
+[dialogue_manager]
+
+general/states=["Perso", "VarPrinci", "Data"]
+
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=180
+window/size/mode=3
+window/stretch/mode="canvas_items"
+window/size/fullscreen=true
+window/layer_5="Actionables"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[importer_defaults]
+
+texture={
+"compress/bptc_ldr": 0,
+"compress/hdr_mode": 0,
+"compress/lossy_quality": 0.7,
+"compress/mode": 0,
+"compress/normal_map": 0,
+"detect_3d": false,
+"flags/anisotropic": false,
+"flags/filter": false,
+"flags/mipmaps": false,
+"flags/repeat": 0,
+"flags/srgb": 2,
+"process/HDR_as_SRGB": false,
+"process/fix_alpha_border": true,
+"process/invert_color": false,
+"process/normal_map_invert_y": false,
+"process/premult_alpha": false,
+"size_limit": 0,
+"stream": false,
+"svg/scale": 1.0
+}
+
+[input]
+
+ui_tab={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194306,"key_label":0,"unicode":0,"echo":false,"script":null)
+]
+}
+ui_espace={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"echo":false,"script":null)
+]
+}
+ui_shift={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194325,"key_label":0,"unicode":0,"echo":false,"script":null)
+]
+}
+"ui_²"={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":96,"key_label":0,"unicode":178,"echo":false,"script":null)
+]
+}
+ui_&={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":49,"key_label":0,"unicode":38,"echo":false,"script":null)
+]
+}
+"ui_é"={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":50,"key_label":0,"unicode":233,"echo":false,"script":null)
+]
+}
+ui_quote={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":51,"key_label":0,"unicode":34,"echo":false,"script":null)
+]
+}
+zoom_in={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":5,"canceled":false,"pressed":false,"double_click":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":61,"key_label":0,"unicode":61,"echo":false,"script":null)
+]
+}
+zoom_out={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":4,"canceled":false,"pressed":false,"double_click":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":54,"key_label":0,"unicode":45,"echo":false,"script":null)
+]
+}
+ui_avancer={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":87,"key_label":0,"unicode":122,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194320,"key_label":0,"unicode":0,"echo":false,"script":null)
+]
+}
+ui_gauche={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"key_label":0,"unicode":113,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194319,"key_label":0,"unicode":0,"echo":false,"script":null)
+]
+}
+ui_droite={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":100,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194321,"key_label":0,"unicode":0,"echo":false,"script":null)
+]
+}
+ui_reculer={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"key_label":0,"unicode":115,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194322,"key_label":0,"unicode":0,"echo":false,"script":null)
+]
+}
+ui_hit={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":82,"key_label":0,"unicode":114,"echo":false,"script":null)
+]
+}
+ui_skip={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
+]
+}
+ui_echap={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"echo":false,"script":null)
+]
+}
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://Scénarios/Scénario_stade/Dialogues/adv2.dialogue", "res://Scénarios/Scénario_stade/Dialogues/gard1.dialogue", "res://Scénarios/Scénario_stade/Dialogues/jou1.dialogue", "res://Scénarios/Scénario_stade/Dialogues/spec8.dialogue", "res://Scénarios/Scénario_stade/Dialogues/spec3.dialogue", "res://Scénarios/Scénario_stade/Dialogues/spec4.dialogue", "res://Scénarios/Scénario_stade/Dialogues/spec7.dialogue", "res://Scénarios/Scénario_stade/Dialogues/arbitre.dialogue", "res://Scénarios/Scénario_stade/Dialogues/spec27.dialogue", "res://Scénarios/Scénario_stade/Dialogues/spec24.dialogue", "?", "res://Scénarios/Scénario_bureau/Superviseur/supervisor.dialogue", "res://Scénarios/Scénario_bureau/Dialogues/patron.dialogue", "res://Scénarios/Scénario_stade/Superviseur_s/supervisor_s.dialogue", "res://Scénarios/Scénario_bureau/Dialogues/accueil.dialogue", "res://Scénarios/Scénario_bureau/Dialogues/emp1.dialogue", "res://Scénarios/Scénario_bureau/Dialogues/emp2.dialogue", "res://Scénarios/Scénario_bureau/Dialogues/emp3.dialogue", "res://Scénarios/Scénario_bureau/Dialogues/emp4.dialogue", "res://Scénarios/Scénario_bureau/Dialogues/emp5.dialogue", "res://Scénarios/Scénario_Sds/Dialogues/accueil.dialogue", "res://Scénarios/Scénario_Sds/Superviseur/supervisor.dialogue", "res://Scénarios/Scénario_stade/Actor/Case 1/Jack/jack.dialogue", "res://Scénarios/Scénario_stade/Actor/Case 2/Paul/paul.dialogue", "res://Scénarios/Scénario_stade/Actor/Case 2/Yair/yair.dialogue", "res://Scénarios/Scénario_bureau/Actor_office/Case 2/Jerome/jerome.dialogue", "res://Scénarios/Scénario_bureau/Actor_office/Case 2/Sophie/sophie.dialogue", "res://Scénarios/Scénario_Sds/Actor_sds/Case 1/Ngannou/ngannou.dialogue", "res://Scénarios/Scénario_Sds/Actor_sds/Case 1/Tyson/tyson.dialogue", "res://Scénarios/Scénario_Sds/Actor_sds/Case 2/Cyril/cyril.dialogue", "res://Scénarios/Scénario_Sds/Actor_sds/Case 2/Alex/Alex.dialogue", "res://Scénarios/Scénario_stade/Actor/Case 1/Moussa/moussa.dialogue", "res://Scénarios/Scénario_bureau/Actor_office/Case 1/Mike/mike.dialogue", "res://Scénarios/Scénario_bureau/Actor_office/Case 1/Thomas/thomas.dialogue", "res://Scénarios/Scénario_Sds/Dialogues/coach.dialogue", "res://Scénarios/Scénario_Sds/Dialogues/sportif3.dialogue", "res://Scénarios/Scénario_Sds/Dialogues/sportif4.dialogue", "res://Scénarios/Scénario_Sds/Dialogues/sportif2.dialogue", "res://Scénarios/Scénario_Sds/Dialogues/sportif5.dialogue", "res://Scénarios/Scénario_Sds/Dialogues/sportif1.dialogue")
+
+[layer_names]
+
+2d_render/layer_5="Actionables"
+2d_physics/layer_5="Actionables"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"

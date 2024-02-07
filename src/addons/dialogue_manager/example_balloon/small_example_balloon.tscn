@@ -1,0 +1,219 @@
+[gd_scene load_steps=18 format=3 uid="uid://13s5spsk34qu"]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_s2gbs"]
+[ext_resource type="Texture2D" uid="uid://b4j1t166v1tli" path="res://Assets/Modern UI/Modern_UI_Style_2.png" id="2_h0frs"]
+[ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_hfvdi"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_1j1j0"]
+[ext_resource type="FontFile" uid="uid://duok8cs18sd6p" path="res://UI/menu/core/assets/Early GameBoy.ttf" id="3_lt6ev"]
+[ext_resource type="StyleBox" uid="uid://bfa1f771xp5r" path="res://Assets/Modern UI/test.tres" id="4_nogst"]
+[ext_resource type="FontFile" uid="uid://dgcwxm1d3emxm" path="res://Font/Volter__28Goldfish_29.ttf" id="6_nynuc"]
+[ext_resource type="Texture2D" uid="uid://bve23cxdd53ao" path="res://Assets/Modern UI/arrow.png" id="9_i13nf"]
+[ext_resource type="Texture2D" uid="uid://1yawo5nfv2di" path="res://Assets/Modern UI/exit.png" id="10_c82uo"]
+[ext_resource type="AudioStream" uid="uid://dtkv4x0luevjx" path="res://Sound/talksound.wav" id="10_s2js3"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_weprw"]
+texture = ExtResource("2_h0frs")
+texture_margin_left = 3.5134
+texture_margin_top = 4.32418
+texture_margin_right = 2.97287
+texture_margin_bottom = 2.43235
+region_rect = Rect2(12, 235, 24, 25)
+
+[sub_resource type="Theme" id="Theme_qq3yp"]
+default_font_size = 9
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_focus_color = Color(0.898039, 0.360784, 0.219608, 1)
+Button/font_sizes/font_size = 4
+Button/fonts/font = ExtResource("6_nynuc")
+Button/styles/disabled = ExtResource("4_nogst")
+Button/styles/focus = ExtResource("4_nogst")
+Button/styles/hover = ExtResource("4_nogst")
+Button/styles/normal = ExtResource("4_nogst")
+MarginContainer/constants/margin_bottom = 4
+MarginContainer/constants/margin_left = 8
+MarginContainer/constants/margin_right = 8
+MarginContainer/constants/margin_top = 4
+Panel/styles/panel = SubResource("StyleBoxTexture_weprw")
+RichTextLabel/fonts/normal_font = ExtResource("3_lt6ev")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_74k0k"]
+texture = ExtResource("2_h0frs")
+texture_margin_left = 3.6997
+texture_margin_top = 8.48754
+texture_margin_right = 3.6997
+texture_margin_bottom = 3.91733
+region_rect = Rect2(13, 284, 22, 24)
+
+[sub_resource type="Theme" id="Theme_snivy"]
+Panel/styles/panel = SubResource("StyleBoxTexture_74k0k")
+RichTextLabel/fonts/bold_font = ExtResource("3_lt6ev")
+RichTextLabel/fonts/normal_font = ExtResource("6_nynuc")
+
+[sub_resource type="Animation" id="Animation_cwsad"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(254, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(160, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_k43dl"]
+resource_name = "indicate"
+loop_mode = 2
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(254, -0.25, 0, 0.25, 0, 254, -0.25, 0, 0.25, 0, 254, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(159, -0.25, 0, 0.25, 0, 160, -0.25, 0, 0.25, 0, 159, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tukgp"]
+_data = {
+"RESET": SubResource("Animation_cwsad"),
+"indicate": SubResource("Animation_k43dl")
+}
+
+[node name="ExampleBalloon" type="CanvasLayer"]
+layer = 100
+script = ExtResource("1_s2gbs")
+metadata/_edit_vertical_guides_ = [15.0, 305.0]
+
+[node name="Balloon" type="Panel" parent="."]
+unique_name_in_owner = true
+top_level = true
+light_mask = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 59.0
+offset_top = -81.0
+offset_right = -49.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_qq3yp")
+
+[node name="Dialogue" type="MarginContainer" parent="Balloon"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 7.0
+offset_right = -18.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Balloon/Dialogue"]
+layout_mode = 2
+
+[node name="DialogueLabel" parent="Balloon/Dialogue/VBoxContainer" instance=ExtResource("2_hfvdi")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/normal_font = ExtResource("6_nynuc")
+theme_override_font_sizes/normal_font_size = 5
+text = "Dialogue..."
+seconds_per_step = 0.04
+
+[node name="ResponsesMenu" type="VBoxContainer" parent="Balloon/Dialogue/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 3
+script = ExtResource("3_1j1j0")
+
+[node name="ResponseExample" type="Button" parent="Balloon/Dialogue/VBoxContainer/ResponsesMenu"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_nynuc")
+theme_override_font_sizes/font_size = 1
+text = "Response Example"
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 69.0
+offset_top = 83.0
+offset_right = 128.0
+offset_bottom = 107.0
+theme = SubResource("Theme_snivy")
+
+[node name="CharacterLabel" type="RichTextLabel" parent="Panel"]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.501961)
+layout_mode = 2
+offset_left = 9.0
+offset_top = 8.0
+offset_right = 57.0
+offset_bottom = 19.0
+mouse_filter = 1
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("6_nynuc")
+theme_override_font_sizes/normal_font_size = 6
+bbcode_enabled = true
+text = "[center]Character"
+fit_content = true
+scroll_active = false
+
+[node name="Indicator" type="TextureRect" parent="."]
+offset_left = 254.0
+offset_top = 160.0
+offset_right = 262.0
+offset_bottom = 164.0
+texture = ExtResource("9_i13nf")
+expand_mode = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Indicator"]
+autoplay = "indicate"
+libraries = {
+"": SubResource("AnimationLibrary_tukgp")
+}
+
+[node name="Exit" type="TextureRect" parent="."]
+offset_left = 254.0
+offset_top = 107.0
+offset_right = 262.0
+offset_bottom = 113.0
+texture = ExtResource("10_c82uo")
+expand_mode = 1
+
+[node name="TalkSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_s2js3")
+volume_db = -22.615
+
+[connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
+[connection signal="spoke" from="Balloon/Dialogue/VBoxContainer/DialogueLabel" to="." method="_on_dialogue_label_spoke"]
+[connection signal="response_selected" from="Balloon/Dialogue/VBoxContainer/ResponsesMenu" to="." method="_on_responses_menu_response_selected"]

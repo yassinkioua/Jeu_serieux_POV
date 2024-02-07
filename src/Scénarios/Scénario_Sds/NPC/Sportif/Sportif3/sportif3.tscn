@@ -1,0 +1,88 @@
+[gd_scene load_steps=15 format=3 uid="uid://cyaohw3qiqxx"]
+
+[ext_resource type="Script" path="res://Scénarios/Scénario_Sds/NPC/Sportif/Sportif3/sportif3.gd" id="1_xwll6"]
+[ext_resource type="Texture2D" uid="uid://c8q7umho4wjic" path="res://Scénarios/Scénario_Sds/NPC/Sportif/Sportif3/sportif3.png" id="2_xfuji"]
+[ext_resource type="Script" path="res://Scénarios/Scénario_Sds/NPC/Sportif/Sportif3/sportif3_area.gd" id="3_iqve0"]
+[ext_resource type="Resource" uid="uid://drdhn8x1ue25f" path="res://Scénarios/Scénario_Sds/Dialogues/sportif3.dialogue" id="4_oo8gy"]
+[ext_resource type="PackedScene" uid="uid://bnp13w1xfbo2u" path="res://PnjUI/pnjui.tscn" id="5_un8vx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u33q4"]
+atlas = ExtResource("2_xfuji")
+region = Rect2(96, 64, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ikvk5"]
+atlas = ExtResource("2_xfuji")
+region = Rect2(112, 64, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dvqeg"]
+atlas = ExtResource("2_xfuji")
+region = Rect2(128, 64, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kc38d"]
+atlas = ExtResource("2_xfuji")
+region = Rect2(144, 64, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bnxyy"]
+atlas = ExtResource("2_xfuji")
+region = Rect2(160, 64, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7i4h"]
+atlas = ExtResource("2_xfuji")
+region = Rect2(176, 64, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2qni0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u33q4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ikvk5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dvqeg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kc38d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bnxyy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j7i4h")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m0w82"]
+radius = 5.0
+height = 16.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mg3tj"]
+
+[node name="sportif3" type="StaticBody2D"]
+z_index = 1
+y_sort_enabled = true
+script = ExtResource("1_xwll6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_2qni0")
+animation = &"run"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7)
+shape = SubResource("CapsuleShape2D_m0w82")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 17
+script = ExtResource("3_iqve0")
+dialogue_ressource = ExtResource("4_oo8gy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 5)
+shape = SubResource("CircleShape2D_mg3tj")
+
+[node name="pnjui" parent="." instance=ExtResource("5_un8vx")]
+visible = false

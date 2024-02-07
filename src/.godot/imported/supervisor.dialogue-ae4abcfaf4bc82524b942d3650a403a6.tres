@@ -1,0 +1,4991 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_8lqtv"]
+
+[resource]
+script = ExtResource("1_8lqtv")
+using_states = PackedStringArray()
+titles = {
+"start": "2"
+}
+character_names = PackedStringArray("Superviseur")
+first_title = "2"
+lines = {
+"1": {
+"id": "1",
+"next_id": "2",
+"text": "start",
+"type": "title"
+},
+"10": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "10",
+"next_id": "11",
+"parent_id": "7",
+"tags": PackedStringArray(),
+"text": "Je compte sur toi.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je compte sur toi.",
+"type": "dialogue"
+},
+"100": {
+"id": "100",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 18
+}])])
+}])
+},
+"next_id": "101",
+"parent_id": "97",
+"type": "mutation"
+},
+"101": {
+"id": "101",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "102",
+"parent_id": "97",
+"type": "mutation"
+},
+"102": {
+"id": "102",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "111",
+"parent_id": "97",
+"type": "mutation"
+},
+"103": {
+"id": "103",
+"next_id": "104",
+"next_id_after": "111",
+"parent_id": "86",
+"tags": PackedStringArray(),
+"text": "Coach",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Coach",
+"type": "response"
+},
+"104": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "104",
+"next_id": "105",
+"parent_id": "103",
+"tags": PackedStringArray(),
+"text": "Absolument pas, c'est dommage, tu n'as visiblement rien compris au scénario!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Absolument pas, c'est dommage, tu n'as visiblement rien compris au scénario!",
+"type": "dialogue"
+},
+"105": {
+"id": "105",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "106",
+"parent_id": "103",
+"type": "mutation"
+},
+"106": {
+"id": "106",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 0
+}])])
+}])
+},
+"next_id": "107",
+"parent_id": "103",
+"type": "mutation"
+},
+"107": {
+"id": "107",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "108",
+"parent_id": "103",
+"type": "mutation"
+},
+"108": {
+"id": "108",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "109",
+"parent_id": "103",
+"type": "mutation"
+},
+"109": {
+"id": "109",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "103",
+"type": "goto"
+},
+"11": {
+"id": "11",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "12",
+"parent_id": "5",
+"type": "mutation"
+},
+"110": {
+"id": "110",
+"next_id": "111",
+"next_id_after": "111",
+"parent_id": "15",
+"tags": PackedStringArray(),
+"text": "Laisse moi le temps de réfléchir encore...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Laisse moi le temps de réfléchir encore...",
+"type": "response"
+},
+"111": {
+"id": "111",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "112",
+"parent_id": "15",
+"type": "mutation"
+},
+"112": {
+"id": "112",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "15",
+"type": "goto"
+},
+"113": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "count"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 2
+}])
+},
+"id": "113",
+"next_conditional_id": "142",
+"next_id": "114",
+"next_id_after": "end!",
+"parent_id": "2",
+"type": "condition"
+},
+"114": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "notes"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 18
+}])
+},
+"id": "114",
+"next_conditional_id": "121",
+"next_id": "115",
+"next_id_after": "end!",
+"parent_id": "113",
+"type": "condition"
+},
+"115": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "115",
+"next_id": "116",
+"parent_id": "114",
+"tags": PackedStringArray(),
+"text": "Tu as très bien compris le scénario, et tu as su quoi faire, félicitation! Voici ta note.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tu as très bien compris le scénario, et tu as su quoi faire, félicitation! Voici ta note.",
+"type": "dialogue"
+},
+"116": {
+"id": "116",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "do_notes",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "117",
+"parent_id": "114",
+"type": "mutation"
+},
+"117": {
+"id": "117",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_complete_fiche_end",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "boxe"
+}])])
+}])
+},
+"next_id": "118",
+"parent_id": "114",
+"type": "mutation"
+},
+"118": {
+"id": "118",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "119",
+"parent_id": "114",
+"type": "mutation"
+},
+"119": {
+"id": "119",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "120",
+"parent_id": "114",
+"type": "mutation"
+},
+"12": {
+"id": "12",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "true"
+}])])
+}])
+},
+"next_id": "13",
+"parent_id": "5",
+"type": "mutation"
+},
+"120": {
+"id": "120",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "end!",
+"parent_id": "114",
+"type": "mutation"
+},
+"121": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "notes"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 14
+}])
+},
+"id": "121",
+"next_conditional_id": "128",
+"next_id": "122",
+"next_id_after": "end!",
+"parent_id": "113",
+"type": "condition"
+},
+"122": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "122",
+"next_id": "123",
+"parent_id": "121",
+"tags": PackedStringArray(),
+"text": "Tu as bien compris le scénario, mais la résolution n'était pas excellente dans ce cas. Certes, apaiser les tensions est une très bonne idée, mais dans notre situation, les deux combattants n'ont rien à voir. Voici ta note.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tu as bien compris le scénario, mais la résolution n'était pas excellente dans ce cas. Certes, apaiser les tensions est une très bonne idée, mais dans notre situation, les deux combattants n'ont rien à voir. Voici ta note.",
+"type": "dialogue"
+},
+"123": {
+"id": "123",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "do_notes",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "124",
+"parent_id": "121",
+"type": "mutation"
+},
+"124": {
+"id": "124",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_complete_fiche_end",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "boxe"
+}])])
+}])
+},
+"next_id": "125",
+"parent_id": "121",
+"type": "mutation"
+},
+"125": {
+"id": "125",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "126",
+"parent_id": "121",
+"type": "mutation"
+},
+"126": {
+"id": "126",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "127",
+"parent_id": "121",
+"type": "mutation"
+},
+"127": {
+"id": "127",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "end!",
+"parent_id": "121",
+"type": "mutation"
+},
+"128": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "notes"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 5
+}])
+},
+"id": "128",
+"next_conditional_id": "135",
+"next_id": "129",
+"next_id_after": "end!",
+"parent_id": "113",
+"type": "condition"
+},
+"129": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "129",
+"next_id": "130",
+"parent_id": "128",
+"tags": PackedStringArray(),
+"text": "Tu n'as pas bien saisi le scénario. Ici, nous savons que ce n'est pas Tyson qui insulte, donc affirmer qu'il est à l'origine de l'erreur est un choix inapproprié. Voici ta note.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tu n'as pas bien saisi le scénario. Ici, nous savons que ce n'est pas Tyson qui insulte, donc affirmer qu'il est à l'origine de l'erreur est un choix inapproprié. Voici ta note.",
+"type": "dialogue"
+},
+"13": {
+"id": "13",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 1
+}])])
+}])
+},
+"next_id": "14",
+"parent_id": "5",
+"type": "mutation"
+},
+"130": {
+"id": "130",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "do_notes",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "131",
+"parent_id": "128",
+"type": "mutation"
+},
+"131": {
+"id": "131",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_complete_fiche_end",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "boxe"
+}])])
+}])
+},
+"next_id": "132",
+"parent_id": "128",
+"type": "mutation"
+},
+"132": {
+"id": "132",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "133",
+"parent_id": "128",
+"type": "mutation"
+},
+"133": {
+"id": "133",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "134",
+"parent_id": "128",
+"type": "mutation"
+},
+"134": {
+"id": "134",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "end!",
+"parent_id": "128",
+"type": "mutation"
+},
+"135": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "notes"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 0
+}])
+},
+"id": "135",
+"next_conditional_id": "end!",
+"next_id": "136",
+"next_id_after": "end!",
+"parent_id": "113",
+"type": "condition"
+},
+"136": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "136",
+"next_id": "137",
+"parent_id": "135",
+"tags": PackedStringArray(),
+"text": "Très déçu, tâche de te concentrer dans la suite. Voici ta note.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Très déçu, tâche de te concentrer dans la suite. Voici ta note.",
+"type": "dialogue"
+},
+"137": {
+"id": "137",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "do_notes",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "138",
+"parent_id": "135",
+"type": "mutation"
+},
+"138": {
+"id": "138",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_complete_fiche_end",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "boxe"
+}])])
+}])
+},
+"next_id": "139",
+"parent_id": "135",
+"type": "mutation"
+},
+"139": {
+"id": "139",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "140",
+"parent_id": "135",
+"type": "mutation"
+},
+"14": {
+"id": "14",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "5",
+"type": "goto"
+},
+"140": {
+"id": "140",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "141",
+"parent_id": "135",
+"type": "mutation"
+},
+"141": {
+"id": "141",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "end!",
+"parent_id": "135",
+"type": "mutation"
+},
+"142": {
+"id": "142",
+"next_conditional_id": "end!",
+"next_id": "143",
+"next_id_after": "end!",
+"parent_id": "2",
+"type": "condition"
+},
+"143": {
+"id": "143",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "end!",
+"parent_id": "142",
+"type": "mutation"
+},
+"144": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "selectedScenarioCase"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "s3_c2"
+}])
+},
+"id": "144",
+"next_conditional_id": "end!",
+"next_id": "145",
+"next_id_after": "end!",
+"type": "condition"
+},
+"145": {
+"id": "145",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "true"
+}])])
+}])
+},
+"next_id": "146",
+"parent_id": "144",
+"type": "mutation"
+},
+"146": {
+"id": "146",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_end_dialog",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "true"
+}])])
+}])
+},
+"next_id": "147",
+"parent_id": "144",
+"type": "mutation"
+},
+"147": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "count"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 0
+}, {
+"type": "colon"
+}])
+},
+"id": "147",
+"next_conditional_id": "157",
+"next_id": "148",
+"next_id_after": "end!",
+"parent_id": "144",
+"type": "condition"
+},
+"148": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "148",
+"next_id": "149",
+"parent_id": "147",
+"tags": PackedStringArray(),
+"text": "Bienvenue, je compte sur toi pour analyser la situation et prendre le meilleur choix possible. Ton année se joue sur cela.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Bienvenue, je compte sur toi pour analyser la situation et prendre le meilleur choix possible. Ton année se joue sur cela.",
+"type": "dialogue"
+},
+"149": {
+"id": "149",
+"next_id": "150",
+"next_id_after": "153",
+"parent_id": "147",
+"responses": PackedStringArray("149"),
+"tags": PackedStringArray(),
+"text": "Aucun problème, je vais faire tout mon possible.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Aucun problème, je vais faire tout mon possible.",
+"type": "response"
+},
+"15": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "count"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 1
+}, {
+"type": "colon"
+}])
+},
+"id": "15",
+"next_conditional_id": "113",
+"next_id": "16",
+"next_id_after": "end!",
+"parent_id": "2",
+"type": "condition"
+},
+"150": {
+"id": "150",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "do_fiche",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "151",
+"parent_id": "149",
+"type": "mutation"
+},
+"151": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "151",
+"next_id": "152",
+"parent_id": "149",
+"tags": PackedStringArray(),
+"text": "Bien, voici ce que j'ai comme informations sur les personnes concernées. Met ces fiches dans ton sac.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Bien, voici ce que j'ai comme informations sur les personnes concernées. Met ces fiches dans ton sac.",
+"type": "dialogue"
+},
+"152": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "152",
+"next_id": "153",
+"parent_id": "149",
+"tags": PackedStringArray(),
+"text": "Je compte sur toi.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je compte sur toi.",
+"type": "dialogue"
+},
+"153": {
+"id": "153",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "154",
+"parent_id": "147",
+"type": "mutation"
+},
+"154": {
+"id": "154",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "true"
+}])])
+}])
+},
+"next_id": "155",
+"parent_id": "147",
+"type": "mutation"
+},
+"155": {
+"id": "155",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 1
+}])])
+}])
+},
+"next_id": "156",
+"parent_id": "147",
+"type": "mutation"
+},
+"156": {
+"id": "156",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "147",
+"type": "goto"
+},
+"157": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "count"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 1
+}, {
+"type": "colon"
+}])
+},
+"id": "157",
+"next_conditional_id": "240",
+"next_id": "158",
+"next_id_after": "end!",
+"parent_id": "144",
+"type": "condition"
+},
+"158": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "158",
+"next_id": "159",
+"parent_id": "157",
+"tags": PackedStringArray(),
+"text": "Je vois que tu as bien analysé la situation, alors quel est ton verdict ?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je vois que tu as bien analysé la situation, alors quel est ton verdict ?",
+"type": "dialogue"
+},
+"159": {
+"id": "159",
+"next_id": "160",
+"next_id_after": "238",
+"parent_id": "157",
+"responses": PackedStringArray("159", "182", "198", "221", "237"),
+"tags": PackedStringArray(),
+"text": "Je pense que c'est de la faute de Alex.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que c'est de la faute de Alex.",
+"type": "response"
+},
+"16": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "16",
+"next_id": "17",
+"parent_id": "15",
+"tags": PackedStringArray(),
+"text": "Je vois que tu as bien analysé la situation, alors quel est ton verdict ?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je vois que tu as bien analysé la situation, alors quel est ton verdict ?",
+"type": "dialogue"
+},
+"160": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "160",
+"next_id": "161",
+"parent_id": "159",
+"tags": PackedStringArray(),
+"text": "C'est une possibilité qui a du sens, que comptes-tu faire ?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "C'est une possibilité qui a du sens, que comptes-tu faire ?",
+"type": "dialogue"
+},
+"161": {
+"id": "161",
+"next_id": "162",
+"next_id_after": "238",
+"parent_id": "159",
+"responses": PackedStringArray("161", "168", "175"),
+"tags": PackedStringArray(),
+"text": "Je pense que coach doit l'exclure du combat et Cyril doit porter plainte.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que coach doit l'exclure du combat et Cyril doit porter plainte.",
+"type": "response"
+},
+"162": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "162",
+"next_id": "163",
+"parent_id": "161",
+"tags": PackedStringArray(),
+"text": "Un peu forte comme réponse, sachant que cela débute d'un malentendu!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Un peu forte comme réponse, sachant que cela débute d'un malentendu!",
+"type": "dialogue"
+},
+"163": {
+"id": "163",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "164",
+"parent_id": "161",
+"type": "mutation"
+},
+"164": {
+"id": "164",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 10
+}])])
+}])
+},
+"next_id": "165",
+"parent_id": "161",
+"type": "mutation"
+},
+"165": {
+"id": "165",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "166",
+"parent_id": "161",
+"type": "mutation"
+},
+"166": {
+"id": "166",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "167",
+"parent_id": "161",
+"type": "mutation"
+},
+"167": {
+"id": "167",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "161",
+"type": "goto"
+},
+"168": {
+"id": "168",
+"next_id": "169",
+"next_id_after": "238",
+"parent_id": "159",
+"tags": PackedStringArray(),
+"text": "Je pense que je devrais encourager Alex à présenter des excuses à Cyril.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que je devrais encourager Alex à présenter des excuses à Cyril.",
+"type": "response"
+},
+"169": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "169",
+"next_id": "170",
+"parent_id": "168",
+"tags": PackedStringArray(),
+"text": "Très bonne décision, cela va permettre d'apaiser les tensions!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Très bonne décision, cela va permettre d'apaiser les tensions!",
+"type": "dialogue"
+},
+"17": {
+"id": "17",
+"next_id": "18",
+"next_id_after": "111",
+"parent_id": "15",
+"responses": PackedStringArray("17", "40", "63", "86", "110"),
+"tags": PackedStringArray(),
+"text": "Je pense que c'est de la faute de Ngannou.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que c'est de la faute de Ngannou.",
+"type": "response"
+},
+"170": {
+"id": "170",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "171",
+"parent_id": "168",
+"type": "mutation"
+},
+"171": {
+"id": "171",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 18
+}])])
+}])
+},
+"next_id": "172",
+"parent_id": "168",
+"type": "mutation"
+},
+"172": {
+"id": "172",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "173",
+"parent_id": "168",
+"type": "mutation"
+},
+"173": {
+"id": "173",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "174",
+"parent_id": "168",
+"type": "mutation"
+},
+"174": {
+"id": "174",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "168",
+"type": "goto"
+},
+"175": {
+"id": "175",
+"next_id": "176",
+"next_id_after": "238",
+"parent_id": "159",
+"tags": PackedStringArray(),
+"text": "Je pense que je devrais le frapper pour le remettre en place.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que je devrais le frapper pour le remettre en place.",
+"type": "response"
+},
+"176": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "176",
+"next_id": "177",
+"parent_id": "175",
+"tags": PackedStringArray(),
+"text": "Prépare-toi à affronter la situation de front. Fonce !",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Prépare-toi à affronter la situation de front. Fonce !",
+"type": "dialogue"
+},
+"177": {
+"id": "177",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "178",
+"parent_id": "175",
+"type": "mutation"
+},
+"178": {
+"id": "178",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "179",
+"parent_id": "175",
+"type": "mutation"
+},
+"179": {
+"id": "179",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "start_fighting",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "A"
+}])])
+}])
+},
+"next_id": "180",
+"parent_id": "175",
+"type": "mutation"
+},
+"18": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "18",
+"next_id": "19",
+"parent_id": "17",
+"tags": PackedStringArray(),
+"text": "Ngannou ? Tu es sûre d'avoir bien compris le scénario là ?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Ngannou ? Tu es sûre d'avoir bien compris le scénario là ?",
+"type": "dialogue"
+},
+"180": {
+"id": "180",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "181",
+"parent_id": "175",
+"type": "mutation"
+},
+"181": {
+"id": "181",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "175",
+"type": "goto"
+},
+"182": {
+"id": "182",
+"next_id": "183",
+"next_id_after": "238",
+"parent_id": "157",
+"tags": PackedStringArray(),
+"text": "Je pense que c'est de la faute de Cyril.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que c'est de la faute de Cyril.",
+"type": "response"
+},
+"183": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "183",
+"next_id": "184",
+"parent_id": "182",
+"tags": PackedStringArray(),
+"text": "Je comprends moyennement ta réponses, quel est le fond de ta pensée ?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je comprends moyennement ta réponses, quel est le fond de ta pensée ?",
+"type": "dialogue"
+},
+"184": {
+"id": "184",
+"next_id": "185",
+"next_id_after": "238",
+"parent_id": "182",
+"responses": PackedStringArray("184", "191"),
+"tags": PackedStringArray(),
+"text": "Je pense que Cyril devrait s'excuser pour les coups porté à Alex.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que Cyril devrait s'excuser pour les coups porté à Alex.",
+"type": "response"
+},
+"185": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "185",
+"next_id": "186",
+"parent_id": "184",
+"tags": PackedStringArray(),
+"text": "Alex est plus fautif que Cyril dans ce cas, c'est une réponse partielle !",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Alex est plus fautif que Cyril dans ce cas, c'est une réponse partielle !",
+"type": "dialogue"
+},
+"186": {
+"id": "186",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "187",
+"parent_id": "184",
+"type": "mutation"
+},
+"187": {
+"id": "187",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 8
+}])])
+}])
+},
+"next_id": "188",
+"parent_id": "184",
+"type": "mutation"
+},
+"188": {
+"id": "188",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "189",
+"parent_id": "184",
+"type": "mutation"
+},
+"189": {
+"id": "189",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "190",
+"parent_id": "184",
+"type": "mutation"
+},
+"19": {
+"id": "19",
+"next_id": "20",
+"next_id_after": "111",
+"parent_id": "17",
+"responses": PackedStringArray("19", "26", "33"),
+"tags": PackedStringArray(),
+"text": "Je pense que je devrais expliquer à Ngannou où est son erreur.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que je devrais expliquer à Ngannou où est son erreur.",
+"type": "response"
+},
+"190": {
+"id": "190",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "184",
+"type": "goto"
+},
+"191": {
+"id": "191",
+"next_id": "192",
+"next_id_after": "238",
+"parent_id": "182",
+"tags": PackedStringArray(),
+"text": "Je pense que je devrais le frapper pour le remettre en place.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que je devrais le frapper pour le remettre en place.",
+"type": "response"
+},
+"192": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "192",
+"next_id": "193",
+"parent_id": "191",
+"tags": PackedStringArray(),
+"text": "Prépare-toi à affronter la situation de front. Fonce !",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Prépare-toi à affronter la situation de front. Fonce !",
+"type": "dialogue"
+},
+"193": {
+"id": "193",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "194",
+"parent_id": "191",
+"type": "mutation"
+},
+"194": {
+"id": "194",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "195",
+"parent_id": "191",
+"type": "mutation"
+},
+"195": {
+"id": "195",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "start_fighting",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "B"
+}])])
+}])
+},
+"next_id": "196",
+"parent_id": "191",
+"type": "mutation"
+},
+"196": {
+"id": "196",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "197",
+"parent_id": "191",
+"type": "mutation"
+},
+"197": {
+"id": "197",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "191",
+"type": "goto"
+},
+"198": {
+"id": "198",
+"next_id": "199",
+"next_id_after": "238",
+"parent_id": "157",
+"tags": PackedStringArray(),
+"text": "Je pense que c'est de la faute des deux.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que c'est de la faute des deux.",
+"type": "response"
+},
+"199": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "199",
+"next_id": "200",
+"parent_id": "198",
+"tags": PackedStringArray(),
+"text": "Le meilleur choix pour moi si tu m'expliques comment tu comptes résoudre ce conflit.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Le meilleur choix pour moi si tu m'expliques comment tu comptes résoudre ce conflit.",
+"type": "dialogue"
+},
+"2": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "selectedScenarioCase"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "s3_c1"
+}])
+},
+"id": "2",
+"next_conditional_id": "144",
+"next_id": "3",
+"next_id_after": "end!",
+"type": "condition"
+},
+"20": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "20",
+"next_id": "21",
+"parent_id": "19",
+"tags": PackedStringArray(),
+"text": "Et quel est son erreur ? On aimerait tous savoir ? C'est une mauvaise réponse.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Et quel est son erreur ? On aimerait tous savoir ? C'est une mauvaise réponse.",
+"type": "dialogue"
+},
+"200": {
+"id": "200",
+"next_id": "201",
+"next_id_after": "238",
+"parent_id": "198",
+"responses": PackedStringArray("200", "207", "214"),
+"tags": PackedStringArray(),
+"text": "Dire au coach de relancer le combat immédiatement.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Dire au coach de relancer le combat immédiatement.",
+"type": "response"
+},
+"201": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "201",
+"next_id": "202",
+"parent_id": "200",
+"tags": PackedStringArray(),
+"text": "Sans régler le conflit ? Cette réponse n'a aucun sens ! Dommage !",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Sans régler le conflit ? Cette réponse n'a aucun sens ! Dommage !",
+"type": "dialogue"
+},
+"202": {
+"id": "202",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "203",
+"parent_id": "200",
+"type": "mutation"
+},
+"203": {
+"id": "203",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 0
+}])])
+}])
+},
+"next_id": "204",
+"parent_id": "200",
+"type": "mutation"
+},
+"204": {
+"id": "204",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "205",
+"parent_id": "200",
+"type": "mutation"
+},
+"205": {
+"id": "205",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "206",
+"parent_id": "200",
+"type": "mutation"
+},
+"206": {
+"id": "206",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "200",
+"type": "goto"
+},
+"207": {
+"id": "207",
+"next_id": "208",
+"next_id_after": "238",
+"parent_id": "198",
+"tags": PackedStringArray(),
+"text": "Les deux doivent s'expliquer/s'excuser pour leur geste, surtout Alex.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Les deux doivent s'expliquer/s'excuser pour leur geste, surtout Alex.",
+"type": "response"
+},
+"208": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "208",
+"next_id": "209",
+"parent_id": "207",
+"tags": PackedStringArray(),
+"text": "La meilleure décision pour moi, dans ce cas là, il faut que les deux communiquent et se comprennent pour avancer !",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "La meilleure décision pour moi, dans ce cas là, il faut que les deux communiquent et se comprennent pour avancer !",
+"type": "dialogue"
+},
+"209": {
+"id": "209",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "210",
+"parent_id": "207",
+"type": "mutation"
+},
+"21": {
+"id": "21",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "22",
+"parent_id": "19",
+"type": "mutation"
+},
+"210": {
+"id": "210",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 18
+}])])
+}])
+},
+"next_id": "211",
+"parent_id": "207",
+"type": "mutation"
+},
+"211": {
+"id": "211",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "212",
+"parent_id": "207",
+"type": "mutation"
+},
+"212": {
+"id": "212",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "213",
+"parent_id": "207",
+"type": "mutation"
+},
+"213": {
+"id": "213",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "207",
+"type": "goto"
+},
+"214": {
+"id": "214",
+"next_id": "215",
+"next_id_after": "238",
+"parent_id": "198",
+"tags": PackedStringArray(),
+"text": "Exclure les combattants de la salle.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Exclure les combattants de la salle.",
+"type": "response"
+},
+"215": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "215",
+"next_id": "216",
+"parent_id": "214",
+"tags": PackedStringArray(),
+"text": "Une solution que personne ne voudrait, même si les conflits ont l'air récurrent... J'accepte !",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Une solution que personne ne voudrait, même si les conflits ont l'air récurrent... J'accepte !",
+"type": "dialogue"
+},
+"216": {
+"id": "216",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "217",
+"parent_id": "214",
+"type": "mutation"
+},
+"217": {
+"id": "217",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 12
+}])])
+}])
+},
+"next_id": "218",
+"parent_id": "214",
+"type": "mutation"
+},
+"218": {
+"id": "218",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "219",
+"parent_id": "214",
+"type": "mutation"
+},
+"219": {
+"id": "219",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "220",
+"parent_id": "214",
+"type": "mutation"
+},
+"22": {
+"id": "22",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 0
+}])])
+}])
+},
+"next_id": "23",
+"parent_id": "19",
+"type": "mutation"
+},
+"220": {
+"id": "220",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "214",
+"type": "goto"
+},
+"221": {
+"id": "221",
+"next_id": "222",
+"next_id_after": "238",
+"parent_id": "157",
+"tags": PackedStringArray(),
+"text": "Je pense que c'est de la faute de quelqu'un d'externe.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que c'est de la faute de quelqu'un d'externe.",
+"type": "response"
+},
+"222": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "222",
+"next_id": "223",
+"parent_id": "221",
+"tags": PackedStringArray(),
+"text": "Tu penses à qui ?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tu penses à qui ?",
+"type": "dialogue"
+},
+"223": {
+"id": "223",
+"next_id": "224",
+"next_id_after": "238",
+"parent_id": "221",
+"responses": PackedStringArray("223", "230"),
+"tags": PackedStringArray(),
+"text": "Coach",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Coach",
+"type": "response"
+},
+"224": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "224",
+"next_id": "225",
+"parent_id": "223",
+"tags": PackedStringArray(),
+"text": "Absolument pas, c'est dommage, tu n'as visiblement rien compris au scénario!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Absolument pas, c'est dommage, tu n'as visiblement rien compris au scénario!",
+"type": "dialogue"
+},
+"225": {
+"id": "225",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "226",
+"parent_id": "223",
+"type": "mutation"
+},
+"226": {
+"id": "226",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 0
+}])])
+}])
+},
+"next_id": "227",
+"parent_id": "223",
+"type": "mutation"
+},
+"227": {
+"id": "227",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "228",
+"parent_id": "223",
+"type": "mutation"
+},
+"228": {
+"id": "228",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "229",
+"parent_id": "223",
+"type": "mutation"
+},
+"229": {
+"id": "229",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "223",
+"type": "goto"
+},
+"23": {
+"id": "23",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "24",
+"parent_id": "19",
+"type": "mutation"
+},
+"230": {
+"id": "230",
+"next_id": "231",
+"next_id_after": "238",
+"parent_id": "221",
+"tags": PackedStringArray(),
+"text": "Sportif à côté du ring",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Sportif à côté du ring",
+"type": "response"
+},
+"231": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "231",
+"next_id": "232",
+"parent_id": "230",
+"tags": PackedStringArray(),
+"text": "Absolument pas, c'est dommage, tu n'as visiblement rien compris au scénario!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Absolument pas, c'est dommage, tu n'as visiblement rien compris au scénario!",
+"type": "dialogue"
+},
+"232": {
+"id": "232",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "233",
+"parent_id": "230",
+"type": "mutation"
+},
+"233": {
+"id": "233",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 0
+}])])
+}])
+},
+"next_id": "234",
+"parent_id": "230",
+"type": "mutation"
+},
+"234": {
+"id": "234",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "235",
+"parent_id": "230",
+"type": "mutation"
+},
+"235": {
+"id": "235",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "236",
+"parent_id": "230",
+"type": "mutation"
+},
+"236": {
+"id": "236",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "230",
+"type": "goto"
+},
+"237": {
+"id": "237",
+"next_id": "238",
+"next_id_after": "238",
+"parent_id": "157",
+"tags": PackedStringArray(),
+"text": "Laisse moi le temps de réfléchir encore...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Laisse moi le temps de réfléchir encore...",
+"type": "response"
+},
+"238": {
+"id": "238",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "239",
+"parent_id": "157",
+"type": "mutation"
+},
+"239": {
+"id": "239",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "157",
+"type": "goto"
+},
+"24": {
+"id": "24",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "25",
+"parent_id": "19",
+"type": "mutation"
+},
+"240": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "count"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 2
+}])
+},
+"id": "240",
+"next_conditional_id": "290",
+"next_id": "241",
+"next_id_after": "end!",
+"parent_id": "144",
+"type": "condition"
+},
+"241": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "notes"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 18
+}])
+},
+"id": "241",
+"next_conditional_id": "248",
+"next_id": "242",
+"next_id_after": "end!",
+"parent_id": "240",
+"type": "condition"
+},
+"242": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "242",
+"next_id": "243",
+"parent_id": "241",
+"tags": PackedStringArray(),
+"text": "Tu as très bien compris le scénario, et tu as su quoi faire, félicitation! Voici ta note.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tu as très bien compris le scénario, et tu as su quoi faire, félicitation! Voici ta note.",
+"type": "dialogue"
+},
+"243": {
+"id": "243",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "do_notes",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "244",
+"parent_id": "241",
+"type": "mutation"
+},
+"244": {
+"id": "244",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_complete_fiche_end",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "boxe"
+}])])
+}])
+},
+"next_id": "245",
+"parent_id": "241",
+"type": "mutation"
+},
+"245": {
+"id": "245",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "246",
+"parent_id": "241",
+"type": "mutation"
+},
+"246": {
+"id": "246",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "247",
+"parent_id": "241",
+"type": "mutation"
+},
+"247": {
+"id": "247",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "end!",
+"parent_id": "241",
+"type": "mutation"
+},
+"248": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "notes"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 16
+}])
+},
+"id": "248",
+"next_conditional_id": "255",
+"next_id": "249",
+"next_id_after": "end!",
+"parent_id": "240",
+"type": "condition"
+},
+"249": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "249",
+"next_id": "250",
+"parent_id": "248",
+"tags": PackedStringArray(),
+"text": "Tu as bien compris le scénario, mais les multiples coups d'Alex font que les excuses ne suffiront sûrement pas. Voici ta note.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tu as bien compris le scénario, mais les multiples coups d'Alex font que les excuses ne suffiront sûrement pas. Voici ta note.",
+"type": "dialogue"
+},
+"25": {
+"id": "25",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "19",
+"type": "goto"
+},
+"250": {
+"id": "250",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "do_notes",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "251",
+"parent_id": "248",
+"type": "mutation"
+},
+"251": {
+"id": "251",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_complete_fiche_end",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "boxe"
+}])])
+}])
+},
+"next_id": "252",
+"parent_id": "248",
+"type": "mutation"
+},
+"252": {
+"id": "252",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "253",
+"parent_id": "248",
+"type": "mutation"
+},
+"253": {
+"id": "253",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "254",
+"parent_id": "248",
+"type": "mutation"
+},
+"254": {
+"id": "254",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "end!",
+"parent_id": "248",
+"type": "mutation"
+},
+"255": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "notes"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 12
+}])
+},
+"id": "255",
+"next_conditional_id": "262",
+"next_id": "256",
+"next_id_after": "end!",
+"parent_id": "240",
+"type": "condition"
+},
+"256": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "256",
+"next_id": "257",
+"parent_id": "255",
+"tags": PackedStringArray(),
+"text": "Tu as bien compris le scénario, mais la résolution n'était pas excellente dans ce cas, tu pourrais faire mieux que ça ! Voici ta note.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tu as bien compris le scénario, mais la résolution n'était pas excellente dans ce cas, tu pourrais faire mieux que ça ! Voici ta note.",
+"type": "dialogue"
+},
+"257": {
+"id": "257",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "do_notes",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "258",
+"parent_id": "255",
+"type": "mutation"
+},
+"258": {
+"id": "258",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_complete_fiche_end",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "boxe"
+}])])
+}])
+},
+"next_id": "259",
+"parent_id": "255",
+"type": "mutation"
+},
+"259": {
+"id": "259",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "260",
+"parent_id": "255",
+"type": "mutation"
+},
+"26": {
+"id": "26",
+"next_id": "27",
+"next_id_after": "111",
+"parent_id": "17",
+"tags": PackedStringArray(),
+"text": "Je pense que Ngannou devrait présenter des excuses à Tyson.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que Ngannou devrait présenter des excuses à Tyson.",
+"type": "response"
+},
+"260": {
+"id": "260",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "261",
+"parent_id": "255",
+"type": "mutation"
+},
+"261": {
+"id": "261",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "end!",
+"parent_id": "255",
+"type": "mutation"
+},
+"262": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "notes"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 10
+}])
+},
+"id": "262",
+"next_conditional_id": "269",
+"next_id": "263",
+"next_id_after": "end!",
+"parent_id": "240",
+"type": "condition"
+},
+"263": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "263",
+"next_id": "264",
+"parent_id": "262",
+"tags": PackedStringArray(),
+"text": "Tu as compris le scénario, mais la résolution n'était pas excellente dans ce cas, certes présenter ces excuses est une bonne solution, mais si le match reprend, la tension sera toujours présente! Voici ta note.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tu as compris le scénario, mais la résolution n'était pas excellente dans ce cas, certes présenter ces excuses est une bonne solution, mais si le match reprend, la tension sera toujours présente! Voici ta note.",
+"type": "dialogue"
+},
+"264": {
+"id": "264",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "do_notes",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "265",
+"parent_id": "262",
+"type": "mutation"
+},
+"265": {
+"id": "265",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_complete_fiche_end",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "boxe"
+}])])
+}])
+},
+"next_id": "266",
+"parent_id": "262",
+"type": "mutation"
+},
+"266": {
+"id": "266",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "267",
+"parent_id": "262",
+"type": "mutation"
+},
+"267": {
+"id": "267",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "268",
+"parent_id": "262",
+"type": "mutation"
+},
+"268": {
+"id": "268",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "end!",
+"parent_id": "262",
+"type": "mutation"
+},
+"269": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "notes"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 8
+}])
+},
+"id": "269",
+"next_conditional_id": "276",
+"next_id": "270",
+"next_id_after": "end!",
+"parent_id": "240",
+"type": "condition"
+},
+"27": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "27",
+"next_id": "28",
+"parent_id": "26",
+"tags": PackedStringArray(),
+"text": "Pour quels raisons ? Cela n'a aucun sens !",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Pour quels raisons ? Cela n'a aucun sens !",
+"type": "dialogue"
+},
+"270": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "270",
+"next_id": "271",
+"parent_id": "269",
+"tags": PackedStringArray(),
+"text": "Dommage, ta réponses était très vague, le principal problème de ce scénario était Alex, cela aurait été mieux si les deux s'excusaient !",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Dommage, ta réponses était très vague, le principal problème de ce scénario était Alex, cela aurait été mieux si les deux s'excusaient !",
+"type": "dialogue"
+},
+"271": {
+"id": "271",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "do_notes",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "272",
+"parent_id": "269",
+"type": "mutation"
+},
+"272": {
+"id": "272",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_complete_fiche_end",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "boxe"
+}])])
+}])
+},
+"next_id": "273",
+"parent_id": "269",
+"type": "mutation"
+},
+"273": {
+"id": "273",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "274",
+"parent_id": "269",
+"type": "mutation"
+},
+"274": {
+"id": "274",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "275",
+"parent_id": "269",
+"type": "mutation"
+},
+"275": {
+"id": "275",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "end!",
+"parent_id": "269",
+"type": "mutation"
+},
+"276": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "notes"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 5
+}])
+},
+"id": "276",
+"next_conditional_id": "283",
+"next_id": "277",
+"next_id_after": "end!",
+"parent_id": "240",
+"type": "condition"
+},
+"277": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "277",
+"next_id": "278",
+"parent_id": "276",
+"tags": PackedStringArray(),
+"text": "Tu n'as pas compris le scénario. Relancer le combat ne fera qu'attiser leur haine mutuelle, ce n'est pas une solution adéquate ! Voici ta note.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tu n'as pas compris le scénario. Relancer le combat ne fera qu'attiser leur haine mutuelle, ce n'est pas une solution adéquate ! Voici ta note.",
+"type": "dialogue"
+},
+"278": {
+"id": "278",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "do_notes",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "279",
+"parent_id": "276",
+"type": "mutation"
+},
+"279": {
+"id": "279",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_complete_fiche_end",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "boxe"
+}])])
+}])
+},
+"next_id": "280",
+"parent_id": "276",
+"type": "mutation"
+},
+"28": {
+"id": "28",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "29",
+"parent_id": "26",
+"type": "mutation"
+},
+"280": {
+"id": "280",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "281",
+"parent_id": "276",
+"type": "mutation"
+},
+"281": {
+"id": "281",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "282",
+"parent_id": "276",
+"type": "mutation"
+},
+"282": {
+"id": "282",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "end!",
+"parent_id": "276",
+"type": "mutation"
+},
+"283": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "notes"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 0
+}])
+},
+"id": "283",
+"next_conditional_id": "end!",
+"next_id": "284",
+"next_id_after": "end!",
+"parent_id": "240",
+"type": "condition"
+},
+"284": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "284",
+"next_id": "285",
+"parent_id": "283",
+"tags": PackedStringArray(),
+"text": "Très déçu, tâche de te concentrer dans la suite. Voici ta note.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Très déçu, tâche de te concentrer dans la suite. Voici ta note.",
+"type": "dialogue"
+},
+"285": {
+"id": "285",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "do_notes",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "286",
+"parent_id": "283",
+"type": "mutation"
+},
+"286": {
+"id": "286",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_complete_fiche_end",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "boxe"
+}])])
+}])
+},
+"next_id": "287",
+"parent_id": "283",
+"type": "mutation"
+},
+"287": {
+"id": "287",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "288",
+"parent_id": "283",
+"type": "mutation"
+},
+"288": {
+"id": "288",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "289",
+"parent_id": "283",
+"type": "mutation"
+},
+"289": {
+"id": "289",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "end!",
+"parent_id": "283",
+"type": "mutation"
+},
+"29": {
+"id": "29",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 0
+}])])
+}])
+},
+"next_id": "30",
+"parent_id": "26",
+"type": "mutation"
+},
+"290": {
+"id": "290",
+"next_conditional_id": "end!",
+"next_id": "291",
+"next_id_after": "end!",
+"parent_id": "144",
+"type": "condition"
+},
+"291": {
+"id": "291",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "end!",
+"parent_id": "290",
+"type": "mutation"
+},
+"3": {
+"id": "3",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "true"
+}])])
+}])
+},
+"next_id": "4",
+"parent_id": "2",
+"type": "mutation"
+},
+"30": {
+"id": "30",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "31",
+"parent_id": "26",
+"type": "mutation"
+},
+"31": {
+"id": "31",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "32",
+"parent_id": "26",
+"type": "mutation"
+},
+"32": {
+"id": "32",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "26",
+"type": "goto"
+},
+"33": {
+"id": "33",
+"next_id": "34",
+"next_id_after": "111",
+"parent_id": "17",
+"tags": PackedStringArray(),
+"text": "Je pense que je devrais le frapper pour le remettre en place.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que je devrais le frapper pour le remettre en place.",
+"type": "response"
+},
+"34": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "34",
+"next_id": "35",
+"parent_id": "33",
+"tags": PackedStringArray(),
+"text": "Prépare-toi à affronter la situation de front. Fonce !",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Prépare-toi à affronter la situation de front. Fonce !",
+"type": "dialogue"
+},
+"35": {
+"id": "35",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "36",
+"parent_id": "33",
+"type": "mutation"
+},
+"36": {
+"id": "36",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "37",
+"parent_id": "33",
+"type": "mutation"
+},
+"37": {
+"id": "37",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "start_fighting",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "A"
+}])])
+}])
+},
+"next_id": "38",
+"parent_id": "33",
+"type": "mutation"
+},
+"38": {
+"id": "38",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "39",
+"parent_id": "33",
+"type": "mutation"
+},
+"39": {
+"id": "39",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "33",
+"type": "goto"
+},
+"4": {
+"id": "4",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_end_dialog",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "true"
+}])])
+}])
+},
+"next_id": "5",
+"parent_id": "2",
+"type": "mutation"
+},
+"40": {
+"id": "40",
+"next_id": "41",
+"next_id_after": "111",
+"parent_id": "15",
+"tags": PackedStringArray(),
+"text": "Je pense que c'est de la faute de Tyson.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que c'est de la faute de Tyson.",
+"type": "response"
+},
+"41": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "41",
+"next_id": "42",
+"parent_id": "40",
+"tags": PackedStringArray(),
+"text": "Tu pense vraiment que c'est la faute à Tyson ? Comment envisages-tu résoudre le conflit ?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tu pense vraiment que c'est la faute à Tyson ? Comment envisages-tu résoudre le conflit ?",
+"type": "dialogue"
+},
+"42": {
+"id": "42",
+"next_id": "43",
+"next_id_after": "111",
+"parent_id": "40",
+"responses": PackedStringArray("42", "49", "56"),
+"tags": PackedStringArray(),
+"text": "Je pense que je devrais expliquer à Tyson où est son erreur.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que je devrais expliquer à Tyson où est son erreur.",
+"type": "response"
+},
+"43": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "43",
+"next_id": "44",
+"parent_id": "42",
+"tags": PackedStringArray(),
+"text": "Visiblement, tu n'as pas compris le scénario, c'est le spectateur qui est en tort et non Tyson!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Visiblement, tu n'as pas compris le scénario, c'est le spectateur qui est en tort et non Tyson!",
+"type": "dialogue"
+},
+"44": {
+"id": "44",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "45",
+"parent_id": "42",
+"type": "mutation"
+},
+"45": {
+"id": "45",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 5
+}])])
+}])
+},
+"next_id": "46",
+"parent_id": "42",
+"type": "mutation"
+},
+"46": {
+"id": "46",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "47",
+"parent_id": "42",
+"type": "mutation"
+},
+"47": {
+"id": "47",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "48",
+"parent_id": "42",
+"type": "mutation"
+},
+"48": {
+"id": "48",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "42",
+"type": "goto"
+},
+"49": {
+"id": "49",
+"next_id": "50",
+"next_id_after": "111",
+"parent_id": "40",
+"tags": PackedStringArray(),
+"text": "Je pense que Tyson devrait présenter des excuses à Ngannou.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que Tyson devrait présenter des excuses à Ngannou.",
+"type": "response"
+},
+"5": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "count"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "number",
+"value": 0
+}, {
+"type": "colon"
+}])
+},
+"id": "5",
+"next_conditional_id": "15",
+"next_id": "6",
+"next_id_after": "end!",
+"parent_id": "2",
+"type": "condition"
+},
+"50": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "50",
+"next_id": "51",
+"parent_id": "49",
+"tags": PackedStringArray(),
+"text": "Visiblement, tu n'as pas compris le scénario, c'est le spectateur qui est en tort et non Tyson!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Visiblement, tu n'as pas compris le scénario, c'est le spectateur qui est en tort et non Tyson!",
+"type": "dialogue"
+},
+"51": {
+"id": "51",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "52",
+"parent_id": "49",
+"type": "mutation"
+},
+"52": {
+"id": "52",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 5
+}])])
+}])
+},
+"next_id": "53",
+"parent_id": "49",
+"type": "mutation"
+},
+"53": {
+"id": "53",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "54",
+"parent_id": "49",
+"type": "mutation"
+},
+"54": {
+"id": "54",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "55",
+"parent_id": "49",
+"type": "mutation"
+},
+"55": {
+"id": "55",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "49",
+"type": "goto"
+},
+"56": {
+"id": "56",
+"next_id": "57",
+"next_id_after": "111",
+"parent_id": "40",
+"tags": PackedStringArray(),
+"text": "Je pense que je devrais le frapper pour le remettre en place.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que je devrais le frapper pour le remettre en place.",
+"type": "response"
+},
+"57": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "57",
+"next_id": "58",
+"parent_id": "56",
+"tags": PackedStringArray(),
+"text": "Prépare-toi à affronter la situation de front. Fonce !",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Prépare-toi à affronter la situation de front. Fonce !",
+"type": "dialogue"
+},
+"58": {
+"id": "58",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "59",
+"parent_id": "56",
+"type": "mutation"
+},
+"59": {
+"id": "59",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "60",
+"parent_id": "56",
+"type": "mutation"
+},
+"6": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "7",
+"parent_id": "5",
+"tags": PackedStringArray(),
+"text": "Bienvenue, je compte sur toi pour analyser la situation et prendre le meilleur choix possible. Ton année se joue sur cela.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Bienvenue, je compte sur toi pour analyser la situation et prendre le meilleur choix possible. Ton année se joue sur cela.",
+"type": "dialogue"
+},
+"60": {
+"id": "60",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "start_fighting",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "B"
+}])])
+}])
+},
+"next_id": "61",
+"parent_id": "56",
+"type": "mutation"
+},
+"61": {
+"id": "61",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}])
+},
+"next_id": "62",
+"parent_id": "56",
+"type": "mutation"
+},
+"62": {
+"id": "62",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "56",
+"type": "goto"
+},
+"63": {
+"id": "63",
+"next_id": "64",
+"next_id_after": "111",
+"parent_id": "15",
+"tags": PackedStringArray(),
+"text": "Je pense que c'est de la faute des deux.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que c'est de la faute des deux.",
+"type": "response"
+},
+"64": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "64",
+"next_id": "65",
+"parent_id": "63",
+"tags": PackedStringArray(),
+"text": "Que devrais-tu faire à présent ?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Que devrais-tu faire à présent ?",
+"type": "dialogue"
+},
+"65": {
+"id": "65",
+"next_id": "66",
+"next_id_after": "111",
+"parent_id": "63",
+"responses": PackedStringArray("65", "72", "79"),
+"tags": PackedStringArray(),
+"text": "Dire au coach de relancer un combat immédiatement",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Dire au coach de relancer un combat immédiatement",
+"type": "response"
+},
+"66": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "66",
+"next_id": "67",
+"parent_id": "65",
+"tags": PackedStringArray(),
+"text": "Sans régler le conflit ? Ce n'est pas une réponse adaptée, c'est regrettable...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Sans régler le conflit ? Ce n'est pas une réponse adaptée, c'est regrettable...",
+"type": "dialogue"
+},
+"67": {
+"id": "67",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "68",
+"parent_id": "65",
+"type": "mutation"
+},
+"68": {
+"id": "68",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 0
+}])])
+}])
+},
+"next_id": "69",
+"parent_id": "65",
+"type": "mutation"
+},
+"69": {
+"id": "69",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "70",
+"parent_id": "65",
+"type": "mutation"
+},
+"7": {
+"id": "7",
+"next_id": "8",
+"next_id_after": "11",
+"parent_id": "5",
+"responses": PackedStringArray("7"),
+"tags": PackedStringArray(),
+"text": "Aucun problème, je vais faire tout mon possible.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Aucun problème, je vais faire tout mon possible.",
+"type": "response"
+},
+"70": {
+"id": "70",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "71",
+"parent_id": "65",
+"type": "mutation"
+},
+"71": {
+"id": "71",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "65",
+"type": "goto"
+},
+"72": {
+"id": "72",
+"next_id": "73",
+"next_id_after": "111",
+"parent_id": "63",
+"tags": PackedStringArray(),
+"text": "Confronter les deux combattants face à face et apaiser les tensions.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Confronter les deux combattants face à face et apaiser les tensions.",
+"type": "response"
+},
+"73": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "73",
+"next_id": "74",
+"parent_id": "72",
+"tags": PackedStringArray(),
+"text": "Je suis d'accord, mais je ne pense pas que c'était la meilleure solution. Dans cette situation, le problème ne venait pas d'eux !",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je suis d'accord, mais je ne pense pas que c'était la meilleure solution. Dans cette situation, le problème ne venait pas d'eux !",
+"type": "dialogue"
+},
+"74": {
+"id": "74",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "75",
+"parent_id": "72",
+"type": "mutation"
+},
+"75": {
+"id": "75",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 12
+}])])
+}])
+},
+"next_id": "76",
+"parent_id": "72",
+"type": "mutation"
+},
+"76": {
+"id": "76",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "77",
+"parent_id": "72",
+"type": "mutation"
+},
+"77": {
+"id": "77",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "78",
+"parent_id": "72",
+"type": "mutation"
+},
+"78": {
+"id": "78",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "72",
+"type": "goto"
+},
+"79": {
+"id": "79",
+"next_id": "80",
+"next_id_after": "111",
+"parent_id": "63",
+"tags": PackedStringArray(),
+"text": "Exclure les combattants de la salle et les bannir à vie.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Exclure les combattants de la salle et les bannir à vie.",
+"type": "response"
+},
+"8": {
+"id": "8",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "do_fiche",
+"type": "function",
+"value": Array[Array]([])
+}])
+},
+"next_id": "9",
+"parent_id": "7",
+"type": "mutation"
+},
+"80": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "80",
+"next_id": "81",
+"parent_id": "79",
+"tags": PackedStringArray(),
+"text": "Les exclure ? Tu n'a vraiment rien compris à la situation.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Les exclure ? Tu n'a vraiment rien compris à la situation.",
+"type": "dialogue"
+},
+"81": {
+"id": "81",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "82",
+"parent_id": "79",
+"type": "mutation"
+},
+"82": {
+"id": "82",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 0
+}])])
+}])
+},
+"next_id": "83",
+"parent_id": "79",
+"type": "mutation"
+},
+"83": {
+"id": "83",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "84",
+"parent_id": "79",
+"type": "mutation"
+},
+"84": {
+"id": "84",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "85",
+"parent_id": "79",
+"type": "mutation"
+},
+"85": {
+"id": "85",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "79",
+"type": "goto"
+},
+"86": {
+"id": "86",
+"next_id": "87",
+"next_id_after": "111",
+"parent_id": "15",
+"tags": PackedStringArray(),
+"text": "Je pense que c'est de la faute de quelqu'un d'externe.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Je pense que c'est de la faute de quelqu'un d'externe.",
+"type": "response"
+},
+"87": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "87",
+"next_id": "88",
+"parent_id": "86",
+"tags": PackedStringArray(),
+"text": "Tu penses à qui ?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tu penses à qui ?",
+"type": "dialogue"
+},
+"88": {
+"id": "88",
+"next_id": "89",
+"next_id_after": "111",
+"parent_id": "86",
+"responses": PackedStringArray("88", "103"),
+"tags": PackedStringArray(),
+"text": "Sportif sur le vélo",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Sportif sur le vélo",
+"type": "response"
+},
+"89": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "89",
+"next_id": "90",
+"parent_id": "88",
+"tags": PackedStringArray(),
+"text": "Bravo, tu as cerné le problème, maintenant il faut que tu me dises comment tu règles ce problème.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Bravo, tu as cerné le problème, maintenant il faut que tu me dises comment tu règles ce problème.",
+"type": "dialogue"
+},
+"9": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "9",
+"next_id": "10",
+"parent_id": "7",
+"tags": PackedStringArray(),
+"text": "Bien, voici ce que j'ai comme informations sur les personnes concernées. Met ces fiches dans ton sac.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Bien, voici ce que j'ai comme informations sur les personnes concernées. Met ces fiches dans ton sac.",
+"type": "dialogue"
+},
+"90": {
+"id": "90",
+"next_id": "91",
+"next_id_after": "111",
+"parent_id": "88",
+"responses": PackedStringArray("90", "97"),
+"tags": PackedStringArray(),
+"text": "Il faut l'exclure définitivement de la salle",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Il faut l'exclure définitivement de la salle",
+"type": "response"
+},
+"91": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "91",
+"next_id": "92",
+"parent_id": "90",
+"tags": PackedStringArray(),
+"text": "Excellente décision !",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Excellente décision !",
+"type": "dialogue"
+},
+"92": {
+"id": "92",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "93",
+"parent_id": "90",
+"type": "mutation"
+},
+"93": {
+"id": "93",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_notes",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 18
+}])])
+}])
+},
+"next_id": "94",
+"parent_id": "90",
+"type": "mutation"
+},
+"94": {
+"id": "94",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "95",
+"parent_id": "90",
+"type": "mutation"
+},
+"95": {
+"id": "95",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_has_talked_supervisor",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "96",
+"parent_id": "90",
+"type": "mutation"
+},
+"96": {
+"id": "96",
+"is_snippet": false,
+"next_id": "end",
+"parent_id": "90",
+"type": "goto"
+},
+"97": {
+"id": "97",
+"next_id": "98",
+"next_id_after": "111",
+"parent_id": "88",
+"tags": PackedStringArray(),
+"text": "Il faut que Ngannou porte plainte pour diffamation",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Il faut que Ngannou porte plainte pour diffamation",
+"type": "response"
+},
+"98": {
+"character": "Superviseur",
+"character_replacements": Array[Dictionary]([]),
+"id": "98",
+"next_id": "99",
+"parent_id": "97",
+"tags": PackedStringArray(),
+"text": "Excellente décision !",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Excellente décision !",
+"type": "dialogue"
+},
+"99": {
+"id": "99",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "100",
+"parent_id": "97",
+"type": "mutation"
+}
+}
+metadata/dialogue_manager_version = "2.29.2"

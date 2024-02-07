@@ -1,0 +1,55 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://c7wttsm5d72s4"]
+
+[ext_resource type="FontFile" uid="uid://dgcwxm1d3emxm" path="res://Font/Volter__28Goldfish_29.ttf" id="1_c7604"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6evj3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_emetc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_conmy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v7hmk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y04ln"]
+
+[resource]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/constants/h_separation = 0
+Button/constants/icon_max_width = 0
+Button/constants/outline_size = 0
+Button/font_sizes/font_size = 8
+Button/fonts/font = ExtResource("1_c7604")
+Button/styles/disabled = SubResource("StyleBoxEmpty_6evj3")
+Button/styles/focus = SubResource("StyleBoxEmpty_emetc")
+Button/styles/hover = SubResource("StyleBoxEmpty_conmy")
+Button/styles/normal = SubResource("StyleBoxEmpty_v7hmk")
+Button/styles/pressed = SubResource("StyleBoxEmpty_y04ln")
+RichTextLabel/colors/default_color = Color(1, 1, 1, 1)
+RichTextLabel/colors/font_outline_color = Color(0, 0, 0, 1)
+RichTextLabel/colors/font_selected_color = Color(0, 0, 0, 1)
+RichTextLabel/colors/font_shadow_color = Color(0, 0, 0, 1)
+RichTextLabel/colors/selection_color = Color(0, 0, 0, 1)
+RichTextLabel/colors/table_border = Color(0, 0, 0, 1)
+RichTextLabel/colors/table_even_row_bg = Color(0, 0, 0, 1)
+RichTextLabel/colors/table_odd_row_bg = Color(0, 0, 0, 1)
+RichTextLabel/constants/line_separation = 0
+RichTextLabel/constants/outline_size = 0
+RichTextLabel/constants/shadow_offset_x = 0
+RichTextLabel/constants/shadow_offset_y = 0
+RichTextLabel/constants/shadow_outline_size = 0
+RichTextLabel/constants/table_h_separation = 0
+RichTextLabel/constants/table_v_separation = 0
+RichTextLabel/constants/text_highlight_h_padding = 0
+RichTextLabel/constants/text_highlight_v_padding = 0
+RichTextLabel/font_sizes/bold_font_size = 16
+RichTextLabel/font_sizes/bold_italics_font_size = 16
+RichTextLabel/font_sizes/italics_font_size = 16
+RichTextLabel/font_sizes/mono_font_size = 16
+RichTextLabel/font_sizes/normal_font_size = 11
+RichTextLabel/fonts/bold_font = null
+RichTextLabel/fonts/bold_italics_font = null
+RichTextLabel/fonts/italics_font = null
+RichTextLabel/fonts/mono_font = null
+RichTextLabel/fonts/normal_font = ExtResource("1_c7604")
+RichTextLabel/styles/focus = null
+RichTextLabel/styles/normal = null

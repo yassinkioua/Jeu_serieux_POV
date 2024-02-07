@@ -1,0 +1,108 @@
+[gd_scene load_steps=25 format=3 uid="uid://c315d54736wga"]
+
+[ext_resource type="Script" path="res://Scénarios/Scénario_stade/Scenes/Scenario_stade.gd" id="1_vh8h6"]
+[ext_resource type="PackedScene" uid="uid://dwqv7xr605wd6" path="res://Scénarios/Scénario_stade/NPC/Adversaires/Adversaire1/adversaire1.tscn" id="2_xnhdg"]
+[ext_resource type="PackedScene" uid="uid://v7cbrgaa4kec" path="res://Scénarios/Scénario_stade/NPC/Adversaires/Adversaire2/adversaire2.tscn" id="3_x8hcc"]
+[ext_resource type="PackedScene" uid="uid://c86ofcgtc5g0i" path="res://Scénarios/Scénario_stade/NPC/Adversaires/Adversaire4/adversaire4.tscn" id="4_p6v87"]
+[ext_resource type="PackedScene" uid="uid://b7aassp04itri" path="res://Scénarios/Scénario_stade/NPC/Adversaires/Gardien2/gardien2.tscn" id="5_ymt5j"]
+[ext_resource type="PackedScene" uid="uid://bqhpyi2uj3bfe" path="res://Scénarios/Scénario_stade/NPC/Joueurs/gardien1.tscn" id="6_2f1v4"]
+[ext_resource type="PackedScene" uid="uid://dkwt7d2ku0hcx" path="res://Scénarios/Scénario_stade/NPC/Joueurs/Joueur1.tscn" id="7_xvpx5"]
+[ext_resource type="PackedScene" uid="uid://dqfhocb7w1fy7" path="res://Scénarios/Scénario_stade/NPC/Joueurs/joueur2.tscn" id="8_gnrpr"]
+[ext_resource type="PackedScene" uid="uid://baj7h342bxcgo" path="res://Scénarios/Scénario_stade/NPC/Joueurs/joueur4.tscn" id="9_mnb2f"]
+[ext_resource type="PackedScene" uid="uid://cevxjbkqol2yy" path="res://Scénarios/Scénario_stade/NPC/Supporters/Supporter1/supporter1.tscn" id="10_aoe8c"]
+[ext_resource type="PackedScene" uid="uid://cwtqasifb5eel" path="res://Scénarios/Scénario_stade/NPC/Supporters/Supporter2/supporter2.tscn" id="11_uta41"]
+[ext_resource type="PackedScene" uid="uid://7edj0337fdj8" path="res://Scénarios/Scénario_stade/NPC/Supporters/Supporter3/supporter3.tscn" id="12_0wp4v"]
+[ext_resource type="PackedScene" uid="uid://bibw3v5wpmayw" path="res://Scénarios/Scénario_stade/NPC/Supporters/Supporter4/supporter4.tscn" id="13_ww802"]
+[ext_resource type="PackedScene" uid="uid://ctbaesi4pqnnf" path="res://Scénarios/Scénario_stade/NPC/Supporters/Supporter6/supporter6.tscn" id="14_xh20t"]
+[ext_resource type="PackedScene" uid="uid://bx5fa8cwp8ble" path="res://Scénarios/Scénario_stade/NPC/Supporters/Supporter7/supporter7.tscn" id="15_juj42"]
+[ext_resource type="PackedScene" uid="uid://bww0op4lbndwn" path="res://Scénarios/Scénario_stade/NPC/Supporters/Supporter8/supporter8.tscn" id="16_26qgv"]
+[ext_resource type="PackedScene" uid="uid://bujc4jevjiryo" path="res://Scénarios/Scénario_stade/NPC/Supporters/Supporter9/supporter9.tscn" id="17_6cyo4"]
+[ext_resource type="PackedScene" uid="uid://ba5qijlhetrr7" path="res://Scénarios/Scénario_stade/NPC/Supporters/Supporter10/supporter10.tscn" id="18_e8icp"]
+[ext_resource type="PackedScene" uid="uid://dr7krtsxrfrg6" path="res://Scénarios/Scénario_stade/Superviseur_s/superviseur_s.tscn" id="19_qi76k"]
+[ext_resource type="PackedScene" uid="uid://1gt0o36drgkb" path="res://Scénarios/Scénario_stade/NPC/Arbitre/arbitre.tscn" id="20_5vs0s"]
+[ext_resource type="PackedScene" uid="uid://cwxaob0541js3" path="res://Scénarios/Scénario_stade/NPC/Supporters/Supporter12/supporter12.tscn" id="20_ssdb6"]
+[ext_resource type="PackedScene" uid="uid://buo2djevm06vf" path="res://Scénarios/Scénario_stade/NPC/Supporters/Supporter22/supporter22.tscn" id="21_cldja"]
+[ext_resource type="PackedScene" uid="uid://ckyq4j66whgay" path="res://Scénarios/Scénario_stade/NPC/Supporters/Supporter24/supporter24.tscn" id="22_f3k6c"]
+[ext_resource type="PackedScene" uid="uid://b6fenerheciov" path="res://Scénarios/Scénario_stade/NPC/Supporters/Supporter27/supporter27.tscn" id="22_wtw3y"]
+
+[node name="Scenario_stade" type="Node2D"]
+script = ExtResource("1_vh8h6")
+metadata/_edit_vertical_guides_ = []
+
+[node name="Adversaire1" parent="." instance=ExtResource("2_xnhdg")]
+position = Vector2(-160, 272)
+
+[node name="Adversaire2" parent="." instance=ExtResource("3_x8hcc")]
+position = Vector2(-225, 295)
+collision_layer = 17
+
+[node name="Adversaire4" parent="." instance=ExtResource("4_p6v87")]
+position = Vector2(-216, 262)
+
+[node name="gardien2" parent="." instance=ExtResource("5_ymt5j")]
+position = Vector2(-192, 207)
+
+[node name="gardien1" parent="." instance=ExtResource("6_2f1v4")]
+position = Vector2(-192, 441)
+collision_layer = 17
+
+[node name="Joueur1" parent="." instance=ExtResource("7_xvpx5")]
+position = Vector2(-148, 376)
+collision_layer = 17
+
+[node name="joueur2" parent="." instance=ExtResource("8_gnrpr")]
+position = Vector2(-234, 340)
+
+[node name="joueur4" parent="." instance=ExtResource("9_mnb2f")]
+position = Vector2(-237, 396)
+
+[node name="supporter1" parent="." instance=ExtResource("10_aoe8c")]
+position = Vector2(-87, 407)
+
+[node name="supporter2" parent="." instance=ExtResource("11_uta41")]
+position = Vector2(-296, 434)
+
+[node name="supporter3" parent="." instance=ExtResource("12_0wp4v")]
+position = Vector2(-339, 173)
+collision_layer = 17
+
+[node name="supporter4" parent="." instance=ExtResource("13_ww802")]
+position = Vector2(-295, 391)
+collision_layer = 17
+
+[node name="supporter6" parent="." instance=ExtResource("14_xh20t")]
+position = Vector2(-87, 279)
+
+[node name="supporter7" parent="." instance=ExtResource("15_juj42")]
+position = Vector2(-55, 357)
+collision_layer = 17
+
+[node name="supporter8" parent="." instance=ExtResource("16_26qgv")]
+position = Vector2(-307, 329)
+collision_layer = 17
+
+[node name="supporter9" parent="." instance=ExtResource("17_6cyo4")]
+position = Vector2(-297, 267)
+
+[node name="supporter10" parent="." instance=ExtResource("18_e8icp")]
+position = Vector2(-297, 245)
+
+[node name="supporter12" parent="." instance=ExtResource("20_ssdb6")]
+position = Vector2(-295, 366)
+
+[node name="supporter22" parent="." instance=ExtResource("21_cldja")]
+position = Vector2(-87, 385)
+
+[node name="supporter24" parent="." instance=ExtResource("22_f3k6c")]
+position = Vector2(-88, 249)
+collision_layer = 17
+
+[node name="supporter27" parent="." instance=ExtResource("22_wtw3y")]
+position = Vector2(-106, 469)
+
+[node name="Supervisor" parent="." instance=ExtResource("19_qi76k")]
+position = Vector2(-40, 198)
+
+[node name="Arbitre" parent="." instance=ExtResource("20_5vs0s")]
+position = Vector2(-87, 324)
+collision_layer = 17

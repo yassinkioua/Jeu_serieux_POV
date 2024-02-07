@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://d32b0e2my4lx"
+path="res://.godot/imported/arbitre.dialogue-bf39d6ce20ef404d10500dd319ccd331.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_stade/Dialogues/arbitre.dialogue"
+dest_files=["res://.godot/imported/arbitre.dialogue-bf39d6ce20ef404d10500dd319ccd331.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://d0ikpe31uj8bm"]
+
+[ext_resource type="Script" path="res://UI/menu/background/scenes/backgroundParallax.gd" id="1_pcc11"]
+[ext_resource type="Texture2D" uid="uid://deihs3xxsgrbj" path="res://UI/menu/background/assets_menu/Layers/back.png" id="3_6yh2f"]
+[ext_resource type="Texture2D" uid="uid://0w2owx0rjy08" path="res://UI/menu/background/assets_menu/Layers/middle.png" id="4_oftsv"]
+[ext_resource type="Texture2D" uid="uid://0co4dmbqst8f" path="res://UI/menu/background/assets_menu/Layers/foreground.png" id="5_t4ppo"]
+
+[node name="backgroundManage" type="ParallaxBackground"]
+script = ExtResource("1_pcc11")
+
+[node name="farBuildings" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.3, 0)
+motion_mirroring = Vector2(320, 0)
+
+[node name="fb1" type="Sprite2D" parent="farBuildings"]
+scale = Vector2(1, 0.658088)
+texture = ExtResource("3_6yh2f")
+centered = false
+
+[node name="fb2" type="Sprite2D" parent="farBuildings"]
+position = Vector2(223, 0)
+scale = Vector2(1, 0.658088)
+texture = ExtResource("3_6yh2f")
+centered = false
+
+[node name="fb3" type="Sprite2D" parent="farBuildings"]
+position = Vector2(112, 0)
+scale = Vector2(1, 0.658088)
+texture = ExtResource("3_6yh2f")
+centered = false
+
+[node name="closeBuildings" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(320, 2.08189e-12)
+
+[node name="cb1" type="Sprite2D" parent="closeBuildings"]
+position = Vector2(145, 11)
+scale = Vector2(1, 0.621324)
+texture = ExtResource("4_oftsv")
+centered = false
+
+[node name="cb2" type="Sprite2D" parent="closeBuildings"]
+position = Vector2(0, 8)
+scale = Vector2(1, 0.669118)
+texture = ExtResource("4_oftsv")
+centered = false
+
+[node name="town" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(320, 0)
+
+[node name="t1" type="Sprite2D" parent="town"]
+position = Vector2(3.55271e-15, 1)
+scale = Vector2(0.465116, 0.661765)
+texture = ExtResource("5_t4ppo")
+centered = false

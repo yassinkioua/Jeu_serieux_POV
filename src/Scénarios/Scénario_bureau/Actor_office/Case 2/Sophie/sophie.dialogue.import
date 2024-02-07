@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://c1qnl0mkcs6mo"
+path="res://.godot/imported/sophie.dialogue-8be07ee0d1e86797e336d5a44e8a236b.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_bureau/Actor_office/Case 2/Sophie/sophie.dialogue"
+dest_files=["res://.godot/imported/sophie.dialogue-8be07ee0d1e86797e336d5a44e8a236b.tres"]
+
+[params]
+
+defaults=true

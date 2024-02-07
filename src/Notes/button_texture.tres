@@ -1,0 +1,11 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://ce30auvkoygj"]
+
+[ext_resource type="Texture2D" uid="uid://dhgdf2a7m8ke3" path="res://Assets/Modern UI/Modern_UI_Style_1.png" id="1_rt80t"]
+
+[resource]
+texture = ExtResource("1_rt80t")
+texture_margin_left = 3.50494
+texture_margin_top = 4.46083
+texture_margin_right = 3.71609
+texture_margin_bottom = 4.41246
+region_rect = Rect2(277, 466, 22, 11)

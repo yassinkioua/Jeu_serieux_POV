@@ -1,0 +1,61 @@
+[gd_scene load_steps=6 format=3 uid="uid://dohthwmmuycfa"]
+
+[ext_resource type="PackedScene" uid="uid://cac86fcg1oerl" path="res://UI/menu/background/scenes/mainMenu.tscn" id="1_0j73o"]
+[ext_resource type="PackedScene" uid="uid://d0ikpe31uj8bm" path="res://UI/menu/background/scenes/back_ground_management.tscn" id="2_2y2ux"]
+[ext_resource type="PackedScene" uid="uid://dsm76p8ljnh4t" path="res://UI/menu/background/options_menu.tscn" id="3_7jlml"]
+[ext_resource type="PackedScene" uid="uid://d051ev6g7df0f" path="res://UI/tutoriel/tutoriel.tscn" id="4_o3rf8"]
+
+[sub_resource type="GDScript" id="GDScript_5mhkf"]
+script/source = "extends CanvasLayer
+
+@onready var mainMenu = %mainMenu
+@onready var optionsMenu = %optionsMenu
+@onready var start = %start
+@onready var tutoriel = $start/tutoriel
+
+func _on_main_menu_main_options():
+	mainMenu.hide()
+	optionsMenu.show()
+
+
+func _on_options_menu_exit_options():
+	optionsMenu.hide()
+	mainMenu.show()
+
+func _on_tutoriel_exit_options():
+	tutoriel.hide()
+	mainMenu.show()
+
+
+func _on_main_menu_tutoriel():
+	tutoriel.show()
+	mainMenu.hide()
+"
+
+[node name="UI" type="CanvasLayer"]
+script = SubResource("GDScript_5mhkf")
+
+[node name="start" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="mainMenu" parent="start" instance=ExtResource("1_0j73o")]
+unique_name_in_owner = true
+
+[node name="backGroundManagement" parent="start" instance=ExtResource("2_2y2ux")]
+
+[node name="optionsMenu" parent="start" instance=ExtResource("3_7jlml")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+
+[node name="tutoriel" parent="start" instance=ExtResource("4_o3rf8")]
+visible = false
+
+[connection signal="main_options" from="start/mainMenu" to="." method="_on_main_menu_main_options"]
+[connection signal="tutoriel" from="start/mainMenu" to="." method="_on_main_menu_tutoriel"]
+[connection signal="exit_options" from="start/optionsMenu" to="." method="_on_options_menu_exit_options"]
+[connection signal="exit_options" from="start/tutoriel" to="." method="_on_tutoriel_exit_options"]

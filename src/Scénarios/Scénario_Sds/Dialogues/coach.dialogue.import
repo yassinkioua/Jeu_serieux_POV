@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dvojaj2qc42qk"
+path="res://.godot/imported/coach.dialogue-d8c5b0f2c58d06ccbbe7556a335c6142.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_Sds/Dialogues/coach.dialogue"
+dest_files=["res://.godot/imported/coach.dialogue-d8c5b0f2c58d06ccbbe7556a335c6142.tres"]
+
+[params]
+
+defaults=true

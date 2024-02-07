@@ -1,0 +1,73 @@
+[gd_scene load_steps=8 format=3 uid="uid://c127pke1cfmg8"]
+
+[ext_resource type="Shader" path="res://EndGameScreen/end_game.gdshader" id="1_k4m6h"]
+[ext_resource type="Script" path="res://InGameOptions/options_in_game.gd" id="1_pkdg4"]
+[ext_resource type="FontFile" uid="uid://duok8cs18sd6p" path="res://UI/menu/core/assets/Early GameBoy.ttf" id="2_q1y75"]
+[ext_resource type="Theme" uid="uid://kljjloysjlhh" path="res://InGameOptions/options_in_game.tres" id="2_vt5w5"]
+[ext_resource type="PackedScene" uid="uid://d051ev6g7df0f" path="res://UI/tutoriel/tutoriel.tscn" id="5_smgb6"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wrto2"]
+shader = ExtResource("1_k4m6h")
+shader_parameter/blur = 1.828
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_lrlex"]
+
+[node name="OptionsGame" type="CanvasLayer"]
+script = ExtResource("1_pkdg4")
+
+[node name="BlurScreen" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_wrto2")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("CanvasTexture_lrlex")
+
+[node name="tutoriel" type="Button" parent="BlurScreen"]
+layout_mode = 0
+offset_left = 113.0
+offset_top = 84.0
+offset_right = 209.0
+offset_bottom = 105.0
+theme = ExtResource("2_vt5w5")
+text = "TUTORIEL"
+
+[node name="return" type="Button" parent="BlurScreen"]
+layout_mode = 0
+offset_left = 113.0
+offset_top = 113.0
+offset_right = 209.0
+offset_bottom = 134.0
+theme = ExtResource("2_vt5w5")
+text = "REVENIR"
+
+[node name="leave" type="Button" parent="BlurScreen"]
+offset_left = 113.0
+offset_top = 144.0
+offset_right = 209.0
+offset_bottom = 165.0
+theme = ExtResource("2_vt5w5")
+text = "QUITTER"
+
+[node name="nom_jeu" type="Label" parent="BlurScreen"]
+layout_mode = 0
+offset_top = 19.0
+offset_right = 321.0
+offset_bottom = 53.0
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_q1y75")
+theme_override_font_sizes/font_size = 11
+text = "POV
+PERCEPTION OF VIOLENCE"
+horizontal_alignment = 1
+
+[node name="tutoriel" parent="." instance=ExtResource("5_smgb6")]
+visible = false
+
+[connection signal="options_game_sig" from="." to="tutoriel" method="_on_options_game_options_game_sig"]
+[connection signal="pressed" from="BlurScreen/tutoriel" to="." method="_on_tutoriel_pressed"]
+[connection signal="pressed" from="BlurScreen/return" to="." method="_on_return_pressed"]
+[connection signal="pressed" from="BlurScreen/leave" to="." method="_on_leave_pressed"]
+
+[editable path="tutoriel"]

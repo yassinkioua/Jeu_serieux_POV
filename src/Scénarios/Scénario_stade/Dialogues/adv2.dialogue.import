@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://d02vrdpj8427b"
+path="res://.godot/imported/adv2.dialogue-460db41a3df65f20427cfa6e014c2d60.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_stade/Dialogues/adv2.dialogue"
+dest_files=["res://.godot/imported/adv2.dialogue-460db41a3df65f20427cfa6e014c2d60.tres"]
+
+[params]
+
+defaults=true

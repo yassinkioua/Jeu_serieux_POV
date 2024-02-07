@@ -1,0 +1,12 @@
+res://Jeu_global/jeu.tscn::2be51c4332bc600c4597b4eae62f1cd7::1700663048::res://.godot/exported/133200997/export-e2c362597a30b51635fe181ade20f309-jeu.scn
+res://map/bureau.tscn::b87697cdbf4736334d750b43625e7548::1700663213::res://.godot/exported/133200997/export-20cca645e201c4a1b74f861ae8685590-bureau.scn
+res://map/tile_map.tscn::76f14919cbfb19602de759b0739269e4::1700663065::res://.godot/exported/133200997/export-553821ae4cadd4703acbfa839a5ad675-tile_map.scn
+res://UI/menu/background/scenes/back_ground_management.tscn::c9cd2ca8d8fa121180ddfd3f3bb5290f::1700659779::res://.godot/exported/133200997/export-59ae2e282f2a098f202a69ee826b9599-back_ground_management.scn
+res://UI/menu/background/scenes/default_env.tres::b419708e53196092014626adb3f0c5cb::1698690757::res://.godot/exported/133200997/export-d6452c3cfd7264fa30ade73191fab911-default_env.res
+res://UI/menu/background/scenes/mainMenu.tscn::32c4fc31f3958ad3192edf1c18cea47a::1700659779::res://.godot/exported/133200997/export-317005f0f72eed412475e50362f7785f-mainMenu.scn
+res://UI/menu/background/options_menu.tres::cfbf02c83cabb5293c5228316dbf4376::1700663028::res://.godot/exported/133200997/export-10b22a0cf6ef1b3281002db1f4c09e65-options_menu.res
+res://UI/menu/background/options_menu.tscn::5c0650909931780067716f62b485dc1a::1700659779::res://.godot/exported/133200997/export-6aef12d0d24bb548e0f09f143f611d24-options_menu.scn
+res://UI/menu/core/assets/menuTheme.tres::3e9e3004bd0ea7ac6dba2a9e5512d1fe::1698688947::res://.godot/exported/133200997/export-9a8b763716163c9495ca502c8b30178a-menuTheme.res
+res://UI/ui.tscn::32b611e310c2f4d0bf0aa50b501c624a::1700659779::res://.godot/exported/133200997/export-ab418935c2d2d9c123b4df008070945e-ui.scn
+res://character_body_2d.tscn::3ea38b3ceda356a3818fcce6908ab984::1700663065::res://.godot/exported/133200997/export-25eb6ab7203e76730ffb59dd2891996c-character_body_2d.scn
+res://default_bus_layout.tres::b3d14ffda9dca5cad2af0a5e4c1ff7b1::1698711381::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res

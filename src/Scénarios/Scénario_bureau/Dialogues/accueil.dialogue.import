@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://btwfj375hjseb"
+path="res://.godot/imported/accueil.dialogue-ab80a4c65ee259da8f366f9a35d97c44.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_bureau/Dialogues/accueil.dialogue"
+dest_files=["res://.godot/imported/accueil.dialogue-ab80a4c65ee259da8f366f9a35d97c44.tres"]
+
+[params]
+
+defaults=true

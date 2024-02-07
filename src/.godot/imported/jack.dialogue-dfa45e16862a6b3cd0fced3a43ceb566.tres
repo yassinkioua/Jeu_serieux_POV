@@ -1,0 +1,238 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_ju835"]
+
+[resource]
+script = ExtResource("1_ju835")
+using_states = PackedStringArray()
+titles = {
+"start": "2"
+}
+character_names = PackedStringArray("Jack", "Jeu")
+first_title = "2"
+lines = {
+"1": {
+"id": "1",
+"next_id": "2",
+"text": "start",
+"type": "title"
+},
+"10": {
+"character": "Jeu",
+"character_replacements": Array[Dictionary]([]),
+"id": "10",
+"next_id": "11",
+"parent_id": "9",
+"tags": PackedStringArray(),
+"text": "Le match a pu reprendre mais il y a toujours des tensions et des insultes",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Le match a pu reprendre mais il y a toujours des tensions et des insultes",
+"type": "dialogue"
+},
+"11": {
+"id": "11",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "12",
+"parent_id": "9",
+"type": "mutation"
+},
+"12": {
+"id": "12",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "15",
+"parent_id": "9",
+"type": "mutation"
+},
+"13": {
+"id": "13",
+"next_id": "14",
+"next_id_after": "15",
+"tags": PackedStringArray(),
+"text": "Se battre contre Jack",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Se battre contre Jack",
+"type": "response"
+},
+"14": {
+"id": "14",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "15",
+"parent_id": "13",
+"type": "mutation"
+},
+"15": {
+"id": "15",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"2": {
+"id": "2",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "true"
+}])])
+}])
+},
+"next_id": "3",
+"type": "mutation"
+},
+"3": {
+"id": "3",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "Data"
+}, {
+"type": "dot"
+}, {
+"function": "set_end_dialog",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "true"
+}])])
+}])
+},
+"next_id": "4",
+"type": "mutation"
+},
+"4": {
+"character": "Jack",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"tags": PackedStringArray(),
+"text": "Tu voulais me parler ?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tu voulais me parler ?",
+"type": "dialogue"
+},
+"5": {
+"id": "5",
+"next_id": "6",
+"next_id_after": "15",
+"responses": PackedStringArray("5", "9", "13"),
+"tags": PackedStringArray(),
+"text": "Faire comprendre à Jack son erreur.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Faire comprendre à Jack son erreur.",
+"type": "response"
+},
+"6": {
+"character": "Jeu",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "7",
+"parent_id": "5",
+"tags": PackedStringArray(),
+"text": "Le match a pu reprendre mais il y a toujours des tensions et des insultes",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Le match a pu reprendre mais il y a toujours des tensions et des insultes",
+"type": "dialogue"
+},
+"7": {
+"id": "7",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "update_talking",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "variable",
+"value": "false"
+}])])
+}])
+},
+"next_id": "8",
+"parent_id": "5",
+"type": "mutation"
+},
+"8": {
+"id": "8",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "VarPrinci"
+}, {
+"type": "dot"
+}, {
+"function": "set_update_count_talk",
+"type": "function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 2
+}])])
+}])
+},
+"next_id": "15",
+"parent_id": "5",
+"type": "mutation"
+},
+"9": {
+"id": "9",
+"next_id": "10",
+"next_id_after": "15",
+"tags": PackedStringArray(),
+"text": "Demander à Jack de s'excuser auprès de Moussa.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Demander à Jack de s'excuser auprès de Moussa.",
+"type": "response"
+}
+}
+metadata/dialogue_manager_version = "2.29.2"

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://blugi0rhxtb65"
+path="res://.godot/imported/spec8.dialogue-32e42fd935f1c36c57100bce90fd8d90.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_stade/Dialogues/spec8.dialogue"
+dest_files=["res://.godot/imported/spec8.dialogue-32e42fd935f1c36c57100bce90fd8d90.tres"]
+
+[params]
+
+defaults=true

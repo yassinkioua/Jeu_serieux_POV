@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://4qjn8xdsoysa"
+path="res://.godot/imported/sportif1.dialogue-dfc072dec09448c767c5b5bd4cf46db5.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_Sds/Dialogues/sportif1.dialogue"
+dest_files=["res://.godot/imported/sportif1.dialogue-dfc072dec09448c767c5b5bd4cf46db5.tres"]
+
+[params]
+
+defaults=true

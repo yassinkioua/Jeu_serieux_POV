@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://w8xs1igspbg4"
+path="res://.godot/imported/jerome.dialogue-1eaf8c864259d875cfcfaf6ecb074e0a.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_bureau/Actor_office/Case 2/Jerome/jerome.dialogue"
+dest_files=["res://.godot/imported/jerome.dialogue-1eaf8c864259d875cfcfaf6ecb074e0a.tres"]
+
+[params]
+
+defaults=true

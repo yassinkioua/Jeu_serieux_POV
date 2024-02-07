@@ -1,0 +1,86 @@
+{
+  "s1_c1": {
+	"Jack": {
+	  "default_sentence": "> Jack n'a pas de parents, Jack a passé une mauvaise journée",
+	  "true_sentence": "> Jack a utilisé des propos racistes, > Jack n'a pas beaucoup d'argent, > Jack a commencé la dispute",
+	  "false_sentence": "> Jack n'a pas dit \"t'es noir\" il a dit \"un entonnoir\" !!!, > Jack s'est pissé dessus parce qu'il a trop bu",
+	  "script": "Jack - Hey passez la balle ! Ne la laissez pas à l'autre c****rd !\n\nMoussa - Toi là de qui tu parles enf***é ?\n\nJack - Tu veux quoi toi ? Je parle de ton coéquipier. Retourne d'où tu viens et me fait pas perdre mon temps.\n\nMoussa - Respectes mes origines. Tes parents t'ont rien appris avant de clamser ?\n\nJack - Tu veux te battre c'est ça ?\n\nMoussa - Bah approche qu'on règle ça vite fait et pas besoin de faire ton testament askip t'es pauvre.\n\n*L'arbitre les sépare et arrête immédiatement le match*"
+	},
+	"Moussa": {
+	  "default_sentence": "> Moussa respecte énormément ses origines",
+	  "true_sentence": "> Moussa dit que Jack est pauvre",
+	  "false_sentence": "> Moussa l'a violamment frappé, > Moussa a commencé la dispute",
+	  "script": null
+	}
+  },
+  "s1_c2": {
+	"Paul": {
+	  "default_sentence": "> Paul est régulièrement tendu",
+	  "true_sentence": "> Paul est connu pour être violent sans raison, > Paul n'aime pas être remis en place, > Paul n'est pas raciste",
+	  "false_sentence": "> Paul est toujours très calme, > Paul raffole des sushis",
+	  "script": "Paul - Yair t'as vraiment un problème ! T'as essayé de me mettre un coup de coude en douce ?\n\nYair - Désolé j'ai glissé mais reveille toi aussi t'es trop mou là !\n\nPaul - Tu veux que je me réveille ? Approche je sais quoi faire !\n\nYair - ???\n\n*Paul frappe Yair à plusieurs reprises.*\n\n*Yair commence à se défendre mais est obligé de renvoyer les coups.*  \n\n*Les coéquipiers et l'arbitre interviennent pour les séparer mais la situation reste tendue.*"
+	},
+	"Yair": {
+	  "default_sentence": "> Yair tient ce match bien à coeur, > Yair a porté des coups à Paul",
+	  "true_sentence": "> Yair s'est juste défendu il n'attaque jamais personne",
+	  "false_sentence": "> Yair est raciste envers Paul, > Yair a attaqué Paul dans le dos",
+	  "script": null
+	}
+  },
+  "s2_c1": {
+	"Thomas": {
+	  "default_sentence": "> Thomas affirme être compétent et indispensable.\n> Thomas accuse Mike de manipuler les gens pour ses propres intérêts",
+	  "true_sentence": "> Thomas est facilement irritable,  >Thomas n'est pas indispensable",
+	  "false_sentence": "> Thomas déteste les nouveaux employés, > Thomas ne stagne pas dans l'entreprise",
+	  "script": "Mike - Salut Thomas. On m'a dit que ton boulot ici est un vrai foutoir. Certains pensent que tu n'es même pas indispensable.\n\nThomas - Ah ouais ? Et qui c'est ces petites balances ?\n\nMike - Oh je ne peux pas te donner de noms. Mais les ragots se propagent ! Si j'étais toi je commencerais à regarder derrière mon dos.\n\nThomas - C'est marrant personne n'a les couilles de me le dire en face. Dis-moi que c'est pas toi qui colportes ces conneries.\n\nMike - Moi ? Bien sûr que non. Je suis juste préoccupé par ton avenir ici mon gars.\n\nThomas - Ouais c'est ça. T'es toujours là à manipuler les gens pour servir tes propres intérêts. .\n\nMike - Regardes-toi. Tu détestes les nouveaux et pourtant tu penses être indispensable.\n\nThomas - Indispensable et compétent tu le sais très bien ! C'est pas comme si tu te souciais vraiment de l'équipe. Tout ce qui compte pour toi c'est ta foutue réputation et monter en échelon.\n\nMike - Et c'est peut-être parce que je sais où je veux aller que je ne supporte pas les seniors comme toi qui stagnent. J'ai pas de temps à perdre avec ceux qui ne suivent pas."
+	},
+	"Mike": {
+	  "default_sentence": "> Mike veut monter vite en échelon, > Mike est nouveau dans l'entreprise",
+	  "true_sentence": "> Mike a commencé en remettant en question le travail de Thomas",
+	  "false_sentence": "> Mike veut s'enfuir au plus vite de l'entreprise, > Mike veut voler la place du patron",
+	  "script": null
+	}
+  },
+  "s2_c2": {
+	"Jérôme": {
+	  "default_sentence": "> Jérôme est très attaché à son travail, > Jérôme est très sincère",
+	  "true_sentence": "> Jérôme accuse Sophie de compromettre ces principes pour monter en échelon, > Jérôme à été convoqué par le patron pour se faire virer",
+	  "false_sentence": "> Jérôme déteste le patron, > Jérôme reproche à Sophie d'être mauvaise dans son travail",
+	  "script": "Sophie - Tu n'as vraiment pas la carrure pour ce poste Jérôme. On se demande encore comment tu as réussi à être embauché.\n\nJérôme - Ah, Sophie toujours aussi aimable. C'est peut-être parce que je suis compétent contrairement à certains.\n\nSophie - Compétent ? Tu veux dire que tu sais bien lécher les bottes du patron. C'est la seule explication possible.\n\nJérôme - Au moins je n'ai pas besoin de compromettre mes principes pour réussir. Contrairement à certains.\n\nSophie - Qu'est-ce que tu insinues Jérôme ?\n\nJérôme - Rien du tout Sophie. Chacun sait ce qu'il fait.\n\nSophie - Tu ferais bien de te taire si tu veux garder ton poste. Tu ne sais visiblement pas à qui tu as affaire.\n\nJérôme - Peut-être que je le sais mieux que tu ne le penses.\n\nSophie - Tu es en train de jouer avec le feu Jérôme. Tu risques gros.\n\nJérôme - C'est drôle que tu dises ça Sophie. Très drôle. On ne sait jamais ce qui se passe en coulisses n'est-ce pas ?"
+	},
+	"Sophie": {
+	  "default_sentence": "> Sophie est très heureuse dans son travail, > Sophie n'aime pas les reproches",
+	  "true_sentence": "> Le patron entretient une relation intime avec Sophie",
+	  "false_sentence": "> Sophie est amoureuse de Jérôme, > Sophie manque énormément d'argent",
+	  "script": null
+	}
+  },
+  "s3_c1": {
+	"Ngannou": {
+	  "default_sentence": "> Ngannou est très croyant, > Ngannou est un boxer respectable",
+	  "true_sentence": "> Ngannou déteste les menteurs, > Ngannou a été touché par ce qu'il a entendu",
+	  "false_sentence": "> Ngannou ne perçoit que ce qui l'arrange, > Ngannou est jaloux de Tyson",
+	  "script": "Ngannou: Hé Tyson t'as vraiment cru que j'allais juste laisser passer tes provocations?\n\nTyson: Oh ferme-la Ngannou. T'as toujours besoin de créer du drama.\n\nNgannou: Drama? T'as pas vu drama encore. T'as touché un nerf sensible avec tes conneries sur le ring.\n\nTyson: Je n'ai même pas ouvert ma bouche qu'est-ce tu me chantes ?\n\nNgannou: Arrête de mentir j'ai horreur des menteurs bordel!\n\nTyson: Je crois que c'est le gars sur le vélo là bas je te le jure ce n'est pas moi! Pourquoi je dirai ça alors que je suis moi aussi musulman !\n\nNgannou: C'est pas possible bordel tu fais que mentir, tu voudrais pas être un homme pour une fois !\n\nCoach: On arrête stop ! C'est quoi ces conneries encore ?"
+	},
+	"Tyson": {
+	  "default_sentence": "> Tyson est très croyant, > Tyson est un habitué du ring",
+	  "true_sentence": "> Tyson n'a pas insulté Ngannou, > Tyson a entendu des propos violents venant d'un spectateur",
+	  "false_sentence": "> Tyson utilisé des propos racistes envers Ngannou, > Tyson est un manipulateur",
+	  "script": null
+	}
+  },
+  "s3_c2": {
+	"Alex": {
+	  "default_sentence": "> Alex est sévèrement ammoché, > Alex est très énervé",
+	  "true_sentence": "> Alex a cru entendre le gong de départ, > Alex s'est battu sans respecter les règles face à Cyril, > Alex a attaqué en premier",
+	  "false_sentence": "> Alex a volé la copine de Cyril, > Alex a frappé volontairement Cyril",
+	  "script": "Coach - Bien, messieurs on attend un combat propre et respectueux. Que le meilleur gagne !\n\nAu moment où le coach donne le signal de départ Alex croit entendre le gong annonçant la fin du round et décide d'attaquer prématurément Cyril.\n\nAlex - *lançant un coup* T'as cru que tu pouvais me défier ?\n\nCyril - *surpris* Attends, qu'est-ce que tu fais ? C'est le début du match pas la fin !\n\nAlex - *confus* Hein ? J'ai cru que c'était la cloche. Tant pis maintenant c'est trop tard.\n\nCyril est désormais irrité par l'attaque surprise et riposte et les deux boxeurs s'engagent dans une bagarre chaotique avant que le coach ne puisse intervenir.\n\nCoach - Stop ! C'est quoi ce bordel ? Retournez dans vos coins maintenant !\n\n*Les coins sont séparés et la tension persiste dans la salle.*"
+	},
+	"Cyril": {
+	  "default_sentence": "> Cyril est sévèrement ammoché, > Cyril est très énervé",
+	  "true_sentence": "> Cyril s'est battu sans respecter les règles face à Alex",
+	  "false_sentence": "> Cyril a frappé Alex dans la nuque, > Cyril n'a pas enfreint les règles durant le combat",
+	  "script": null
+	}
+  }
+}

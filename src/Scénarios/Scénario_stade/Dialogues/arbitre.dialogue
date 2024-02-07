@@ -1,0 +1,11 @@
+~ start
+set VarPrinci.update_talking(true)
+set Data.set_end_dialog(true)
+if Data.selectedScenarioCase == "s1_c1"
+	Z Arbitre: J'ai du arrêter le match à cause de propos violents que j'ai entendu des deux côtés...
+	set VarPrinci.update_talking(false)
+	=> END
+elif Data.selectedScenarioCase == "s1_c2"
+	Z Arbitre: J'étais entrain de boire un coup avec la tribune, j'ai pas vu qui a commencé désolé *gloups*
+	set VarPrinci.update_talking(false)
+	=> END

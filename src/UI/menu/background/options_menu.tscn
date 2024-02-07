@@ -1,0 +1,104 @@
+[gd_scene load_steps=5 format=3 uid="uid://dsm76p8ljnh4t"]
+
+[ext_resource type="FontFile" uid="uid://duok8cs18sd6p" path="res://UI/menu/core/assets/Early GameBoy.ttf" id="1_lclwp"]
+[ext_resource type="Theme" uid="uid://cwq2glc7j11x2" path="res://UI/menu/core/assets/menuTheme.tres" id="1_mtn31"]
+[ext_resource type="Script" path="res://UI/menu/background/options_menu.gd" id="2_xjrd0"]
+[ext_resource type="ButtonGroup" uid="uid://c4y0disndfwm1" path="res://UI/menu/background/options_menu.tres" id="4_lx1qa"]
+
+[node name="optionsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_mtn31")
+script = ExtResource("2_xjrd0")
+
+[node name="margin" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 181.0
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 15
+
+[node name="box" type="VBoxContainer" parent="margin"]
+layout_mode = 2
+alignment = 1
+
+[node name="options" type="Label" parent="margin/box"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("1_lclwp")
+theme_override_font_sizes/font_size = 12
+text = "OPTIONS"
+horizontal_alignment = 1
+
+[node name="labelButtons" type="VBoxContainer" parent="margin/box"]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="borderless" type="Label" parent="margin/box/labelButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "BORDERLESS"
+
+[node name="fullscreen" type="Label" parent="margin/box/labelButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "FULLSCREEN"
+
+[node name="music" type="Label" parent="margin/box/labelButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Music"
+
+[node name="Label" type="Label" parent="margin/box/labelButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "VSYNC"
+
+[node name="exit" type="Button" parent="margin/box/labelButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "EXIT"
+
+[node name="vSyncCheck" type="CheckBox" parent="."]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 131.0
+offset_right = 104.0
+offset_bottom = 147.0
+
+[node name="fullscreenCheck" type="CheckBox" parent="."]
+layout_mode = 0
+offset_left = 138.0
+offset_top = 91.0
+offset_right = 154.0
+offset_bottom = 107.0
+button_pressed = true
+button_group = ExtResource("4_lx1qa")
+
+[node name="borderlessCheck" type="CheckBox" parent="."]
+layout_mode = 0
+offset_left = 138.0
+offset_top = 71.0
+offset_right = 154.0
+offset_bottom = 87.0
+button_group = ExtResource("4_lx1qa")
+
+[node name="Music" type="HSlider" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 95.0
+offset_top = 111.0
+offset_right = 278.0
+offset_bottom = 127.0
+
+[connection signal="pressed" from="margin/box/labelButtons/exit" to="." method="_on_exit_pressed"]
+[connection signal="toggled" from="vSyncCheck" to="." method="_on_v_sync_check_toggled"]
+[connection signal="toggled" from="fullscreenCheck" to="." method="_on_fullscreen_check_toggled"]
+[connection signal="toggled" from="borderlessCheck" to="." method="_on_borderless_check_toggled"]
+[connection signal="value_changed" from="Music" to="." method="_on_music_value_changed"]

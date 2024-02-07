@@ -1,0 +1,291 @@
+~ start
+if Data.selectedScenarioCase == "s3_c1"
+	set VarPrinci.update_talking(true)
+	set Data.set_end_dialog(true)
+	if VarPrinci.count == 0:
+		Superviseur: Bienvenue, je compte sur toi pour analyser la situation et prendre le meilleur choix possible. Ton année se joue sur cela.
+		- Aucun problème, je vais faire tout mon possible.
+			do VarPrinci.do_fiche()
+			Superviseur: Bien, voici ce que j'ai comme informations sur les personnes concernées. Met ces fiches dans ton sac.
+			Superviseur: Je compte sur toi.
+		set VarPrinci.update_talking(false)
+		set Data.set_has_talked_supervisor(true)
+		set VarPrinci.set_update_count_talk(1)
+		=> END
+	elif VarPrinci.count == 1:
+		Superviseur: Je vois que tu as bien analysé la situation, alors quel est ton verdict ?
+		- Je pense que c'est de la faute de Ngannou.
+			Superviseur: Ngannou ? Tu es sûre d'avoir bien compris le scénario là ?
+			- Je pense que je devrais expliquer à Ngannou où est son erreur.
+				Superviseur: Et quel est son erreur ? On aimerait tous savoir ? C'est une mauvaise réponse.
+				set VarPrinci.update_talking(false)
+				set Data.set_notes(0)
+				set VarPrinci.set_update_count_talk(2)
+				set Data.set_has_talked_supervisor(false)
+				=> END
+			- Je pense que Ngannou devrait présenter des excuses à Tyson.
+				Superviseur: Pour quels raisons ? Cela n'a aucun sens !
+				set VarPrinci.update_talking(false)
+				set Data.set_notes(0)
+				set VarPrinci.set_update_count_talk(2)
+				set Data.set_has_talked_supervisor(false)
+				=> END
+			- Je pense que je devrais le frapper pour le remettre en place.
+				Superviseur: Prépare-toi à affronter la situation de front. Fonce !
+				set VarPrinci.update_talking(false)
+				set Data.set_has_talked_supervisor(false)
+				do VarPrinci.start_fighting("A")
+				set VarPrinci.set_update_count_talk(3)
+				=> END
+		- Je pense que c'est de la faute de Tyson.
+			Superviseur: Tu pense vraiment que c'est la faute à Tyson ? Comment envisages-tu résoudre le conflit ?
+			- Je pense que je devrais expliquer à Tyson où est son erreur.
+				Superviseur: Visiblement, tu n'as pas compris le scénario, c'est le spectateur qui est en tort et non Tyson!
+				set VarPrinci.update_talking(false)
+				set Data.set_notes(5)
+				set VarPrinci.set_update_count_talk(2)
+				set Data.set_has_talked_supervisor(false)
+				=> END
+			- Je pense que Tyson devrait présenter des excuses à Ngannou.
+				Superviseur: Visiblement, tu n'as pas compris le scénario, c'est le spectateur qui est en tort et non Tyson!
+				set VarPrinci.update_talking(false)
+				set Data.set_notes(5)
+				set VarPrinci.set_update_count_talk(2)
+				set Data.set_has_talked_supervisor(false)
+				=> END
+			- Je pense que je devrais le frapper pour le remettre en place.
+				Superviseur: Prépare-toi à affronter la situation de front. Fonce !
+				set VarPrinci.update_talking(false)
+				set Data.set_has_talked_supervisor(false)
+				do VarPrinci.start_fighting("B")
+				set VarPrinci.set_update_count_talk(3)
+				=> END
+		- Je pense que c'est de la faute des deux.
+			Superviseur: Que devrais-tu faire à présent ?
+			- Dire au coach de relancer un combat immédiatement
+				Superviseur: Sans régler le conflit ? Ce n'est pas une réponse adaptée, c'est regrettable...
+				set VarPrinci.update_talking(false)
+				set Data.set_notes(0)
+				set VarPrinci.set_update_count_talk(2)
+				set Data.set_has_talked_supervisor(false)
+				=> END
+			- Confronter les deux combattants face à face et apaiser les tensions.
+				Superviseur: Je suis d'accord, mais je ne pense pas que c'était la meilleure solution. Dans cette situation, le problème ne venait pas d'eux !
+				set VarPrinci.update_talking(false)
+				set Data.set_notes(12)
+				set VarPrinci.set_update_count_talk(2)
+				set Data.set_has_talked_supervisor(false)
+				=> END
+			- Exclure les combattants de la salle et les bannir à vie.
+				Superviseur: Les exclure ? Tu n'a vraiment rien compris à la situation.
+				set VarPrinci.update_talking(false)
+				set Data.set_notes(0)
+				set VarPrinci.set_update_count_talk(2)
+				set Data.set_has_talked_supervisor(false)
+				=> END
+		- Je pense que c'est de la faute de quelqu'un d'externe.
+			Superviseur: Tu penses à qui ?
+			- Sportif sur le vélo
+				Superviseur: Bravo, tu as cerné le problème, maintenant il faut que tu me dises comment tu règles ce problème.
+				- Il faut l'exclure définitivement de la salle
+					Superviseur: Excellente décision !
+					set VarPrinci.update_talking(false)
+					set Data.set_notes(18)
+					set VarPrinci.set_update_count_talk(2)
+					set Data.set_has_talked_supervisor(false)
+					=> END
+				- Il faut que Ngannou porte plainte pour diffamation 
+					Superviseur: Excellente décision !
+					set VarPrinci.update_talking(false)
+					set Data.set_notes(18)
+					set VarPrinci.set_update_count_talk(2)
+					set Data.set_has_talked_supervisor(false)
+			- Coach
+				Superviseur: Absolument pas, c'est dommage, tu n'as visiblement rien compris au scénario!
+				set VarPrinci.update_talking(false)
+				set Data.set_notes(0)
+				set VarPrinci.set_update_count_talk(2)
+				set Data.set_has_talked_supervisor(false)
+				=> END
+		- Laisse moi le temps de réfléchir encore...
+		set VarPrinci.update_talking(false)
+		=> END
+	elif VarPrinci.count == 2
+		if Data.notes == 18
+			Superviseur: Tu as très bien compris le scénario, et tu as su quoi faire, félicitation! Voici ta note.
+			do VarPrinci.do_notes()
+			do Data.set_complete_fiche_end("boxe")
+			set VarPrinci.update_talking(false)
+			set Data.set_has_talked_supervisor(false)
+			set VarPrinci.set_update_count_talk(3)
+		elif Data.notes == 14
+			Superviseur: Tu as bien compris le scénario, mais la résolution n'était pas excellente dans ce cas. Certes, apaiser les tensions est une très bonne idée, mais dans notre situation, les deux combattants n'ont rien à voir. Voici ta note.
+			do VarPrinci.do_notes()
+			do Data.set_complete_fiche_end("boxe")
+			set VarPrinci.update_talking(false)
+			set Data.set_has_talked_supervisor(false)
+			set VarPrinci.set_update_count_talk(3)
+		elif Data.notes == 5
+			Superviseur: Tu n'as pas bien saisi le scénario. Ici, nous savons que ce n'est pas Tyson qui insulte, donc affirmer qu'il est à l'origine de l'erreur est un choix inapproprié. Voici ta note.
+			do VarPrinci.do_notes()
+			do Data.set_complete_fiche_end("boxe")
+			set VarPrinci.update_talking(false)
+			set Data.set_has_talked_supervisor(false)
+			set VarPrinci.set_update_count_talk(3)
+		elif Data.notes == 0
+			Superviseur: Très déçu, tâche de te concentrer dans la suite. Voici ta note.
+			do VarPrinci.do_notes()
+			do Data.set_complete_fiche_end("boxe")
+			set VarPrinci.update_talking(false)
+			set Data.set_has_talked_supervisor(false)
+			set VarPrinci.set_update_count_talk(3)
+	else
+		set VarPrinci.update_talking(false)
+elif Data.selectedScenarioCase == "s3_c2"
+	set VarPrinci.update_talking(true)
+	set Data.set_end_dialog(true)
+	if VarPrinci.count == 0:
+		Superviseur: Bienvenue, je compte sur toi pour analyser la situation et prendre le meilleur choix possible. Ton année se joue sur cela.
+		- Aucun problème, je vais faire tout mon possible.
+			do VarPrinci.do_fiche()
+			Superviseur: Bien, voici ce que j'ai comme informations sur les personnes concernées. Met ces fiches dans ton sac.
+			Superviseur: Je compte sur toi.
+		set VarPrinci.update_talking(false)
+		set Data.set_has_talked_supervisor(true)
+		set VarPrinci.set_update_count_talk(1)
+		=> END
+	elif VarPrinci.count == 1:
+		Superviseur: Je vois que tu as bien analysé la situation, alors quel est ton verdict ?
+		- Je pense que c'est de la faute de Alex.
+			Superviseur: C'est une possibilité qui a du sens, que comptes-tu faire ?
+			- Je pense que coach doit l'exclure du combat et Cyril doit porter plainte.
+				Superviseur: Un peu forte comme réponse, sachant que cela débute d'un malentendu!
+				set VarPrinci.update_talking(false)
+				set Data.set_notes(10)
+				set VarPrinci.set_update_count_talk(2)
+				set Data.set_has_talked_supervisor(false)
+				=> END
+			- Je pense que je devrais encourager Alex à présenter des excuses à Cyril.
+				Superviseur: Très bonne décision, cela va permettre d'apaiser les tensions!
+				set VarPrinci.update_talking(false)
+				set Data.set_notes(18)
+				set VarPrinci.set_update_count_talk(2)
+				set Data.set_has_talked_supervisor(false)
+				=> END
+			- Je pense que je devrais le frapper pour le remettre en place.
+				Superviseur: Prépare-toi à affronter la situation de front. Fonce !
+				set VarPrinci.update_talking(false)
+				set Data.set_has_talked_supervisor(false)
+				do VarPrinci.start_fighting("A")
+				set VarPrinci.set_update_count_talk(3)
+				=> END
+		- Je pense que c'est de la faute de Cyril.
+			Superviseur: Je comprends moyennement ta réponses, quel est le fond de ta pensée ?
+			- Je pense que Cyril devrait s'excuser pour les coups porté à Alex.
+				Superviseur: Alex est plus fautif que Cyril dans ce cas, c'est une réponse partielle !
+				set VarPrinci.update_talking(false)
+				set Data.set_notes(8)
+				set VarPrinci.set_update_count_talk(2)
+				set Data.set_has_talked_supervisor(false)
+				=> END
+			- Je pense que je devrais le frapper pour le remettre en place.
+				Superviseur: Prépare-toi à affronter la situation de front. Fonce !
+				set VarPrinci.update_talking(false)
+				set Data.set_has_talked_supervisor(false)
+				do VarPrinci.start_fighting("B")
+				set VarPrinci.set_update_count_talk(3)
+				=> END
+		- Je pense que c'est de la faute des deux.
+			Superviseur: Le meilleur choix pour moi si tu m'expliques comment tu comptes résoudre ce conflit.
+			- Dire au coach de relancer le combat immédiatement.
+				Superviseur: Sans régler le conflit ? Cette réponse n'a aucun sens ! Dommage !
+				set VarPrinci.update_talking(false)
+				set Data.set_notes(0)
+				set VarPrinci.set_update_count_talk(2)
+				set Data.set_has_talked_supervisor(false)
+				=> END
+			- Les deux doivent s'expliquer/s'excuser pour leur geste, surtout Alex.
+				Superviseur: La meilleure décision pour moi, dans ce cas là, il faut que les deux communiquent et se comprennent pour avancer !
+				set VarPrinci.update_talking(false)
+				set Data.set_notes(18)
+				set VarPrinci.set_update_count_talk(2)
+				set Data.set_has_talked_supervisor(false)
+				=> END
+			- Exclure les combattants de la salle.
+				Superviseur: Une solution que personne ne voudrait, même si les conflits ont l'air récurrent... J'accepte !
+				set VarPrinci.update_talking(false)
+				set Data.set_notes(12)
+				set VarPrinci.set_update_count_talk(2)
+				set Data.set_has_talked_supervisor(false)
+				=> END
+		- Je pense que c'est de la faute de quelqu'un d'externe.
+			Superviseur: Tu penses à qui ?
+			- Coach
+				Superviseur: Absolument pas, c'est dommage, tu n'as visiblement rien compris au scénario!
+				set VarPrinci.update_talking(false)
+				set Data.set_notes(0)
+				set VarPrinci.set_update_count_talk(2)
+				set Data.set_has_talked_supervisor(false)
+				=> END
+			- Sportif à côté du ring
+				Superviseur: Absolument pas, c'est dommage, tu n'as visiblement rien compris au scénario!
+				set VarPrinci.update_talking(false)
+				set Data.set_notes(0)
+				set VarPrinci.set_update_count_talk(2)
+				set Data.set_has_talked_supervisor(false)
+				=> END
+		- Laisse moi le temps de réfléchir encore...
+		set VarPrinci.update_talking(false)
+		=> END
+	elif VarPrinci.count == 2
+		if Data.notes == 18
+			Superviseur: Tu as très bien compris le scénario, et tu as su quoi faire, félicitation! Voici ta note.
+			do VarPrinci.do_notes()
+			do Data.set_complete_fiche_end("boxe")
+			set VarPrinci.update_talking(false)
+			set Data.set_has_talked_supervisor(false)
+			set VarPrinci.set_update_count_talk(3)
+		elif Data.notes == 16
+			Superviseur: Tu as bien compris le scénario, mais les multiples coups d'Alex font que les excuses ne suffiront sûrement pas. Voici ta note.
+			do VarPrinci.do_notes()
+			do Data.set_complete_fiche_end("boxe")
+			set VarPrinci.update_talking(false)
+			set Data.set_has_talked_supervisor(false)
+			set VarPrinci.set_update_count_talk(3)
+		elif Data.notes == 12
+			Superviseur: Tu as bien compris le scénario, mais la résolution n'était pas excellente dans ce cas, tu pourrais faire mieux que ça ! Voici ta note.
+			do VarPrinci.do_notes()
+			do Data.set_complete_fiche_end("boxe")
+			set VarPrinci.update_talking(false)
+			set Data.set_has_talked_supervisor(false)
+			set VarPrinci.set_update_count_talk(3)
+		elif Data.notes == 10
+			Superviseur: Tu as compris le scénario, mais la résolution n'était pas excellente dans ce cas, certes présenter ces excuses est une bonne solution, mais si le match reprend, la tension sera toujours présente! Voici ta note.
+			do VarPrinci.do_notes()
+			do Data.set_complete_fiche_end("boxe")
+			set VarPrinci.update_talking(false)
+			set Data.set_has_talked_supervisor(false)
+			set VarPrinci.set_update_count_talk(3)
+		elif Data.notes == 8
+			Superviseur: Dommage, ta réponses était très vague, le principal problème de ce scénario était Alex, cela aurait été mieux si les deux s'excusaient !
+			do VarPrinci.do_notes()
+			do Data.set_complete_fiche_end("boxe")
+			set VarPrinci.update_talking(false)
+			set Data.set_has_talked_supervisor(false)
+			set VarPrinci.set_update_count_talk(3)
+		elif Data.notes == 5
+			Superviseur: Tu n'as pas compris le scénario. Relancer le combat ne fera qu'attiser leur haine mutuelle, ce n'est pas une solution adéquate ! Voici ta note.
+			do VarPrinci.do_notes()
+			do Data.set_complete_fiche_end("boxe")
+			set VarPrinci.update_talking(false)
+			set Data.set_has_talked_supervisor(false)
+			set VarPrinci.set_update_count_talk(3)
+		elif Data.notes == 0
+			Superviseur: Très déçu, tâche de te concentrer dans la suite. Voici ta note.
+			do VarPrinci.do_notes()
+			do Data.set_complete_fiche_end("boxe")
+			set VarPrinci.update_talking(false)
+			set Data.set_has_talked_supervisor(false)
+			set VarPrinci.set_update_count_talk(3)
+	else
+		set VarPrinci.update_talking(false)

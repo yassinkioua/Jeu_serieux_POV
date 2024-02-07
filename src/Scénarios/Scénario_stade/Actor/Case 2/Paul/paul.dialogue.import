@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://b2edixlna3ip0"
+path="res://.godot/imported/paul.dialogue-647cf59f1dd210518a1d4cd41604fc65.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_stade/Actor/Case 2/Paul/paul.dialogue"
+dest_files=["res://.godot/imported/paul.dialogue-647cf59f1dd210518a1d4cd41604fc65.tres"]
+
+[params]
+
+defaults=true

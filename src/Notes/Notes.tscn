@@ -1,0 +1,198 @@
+[gd_scene load_steps=3 format=3 uid="uid://2po736sctofe"]
+
+[ext_resource type="Script" path="res://Notes/Notes.gd" id="1_fti0o"]
+[ext_resource type="Theme" uid="uid://b25g0fu24dhr0" path="res://Notes/Notes.tres" id="1_w0kvv"]
+
+[node name="Notes" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fti0o")
+
+[node name="Notes" type="Button" parent="."]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 10.0
+offset_right = 153.0
+offset_bottom = 27.0
+theme = ExtResource("1_w0kvv")
+text = "Notes"
+
+[node name="Notes_panel" type="Panel" parent="Notes"]
+show_behind_parent = true
+layout_mode = 0
+offset_left = -37.0
+offset_top = 15.0
+offset_right = 140.0
+offset_bottom = 48.0
+theme = ExtResource("1_w0kvv")
+
+[node name="Fiche" type="RichTextLabel" parent="Notes/Notes_panel"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 91.0
+offset_bottom = 13.0
+theme_override_font_sizes/normal_font_size = 4
+bbcode_enabled = true
+text = "Fiche de résultat pour le scénario :"
+
+[node name="Fiche_name" type="RichTextLabel" parent="Notes/Notes_panel"]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 7.0
+offset_right = 177.0
+offset_bottom = 13.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 4
+bbcode_enabled = true
+text = "[color=yellow]stade[/color]"
+
+[node name="Notes" type="RichTextLabel" parent="Notes/Notes_panel"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 19.0
+offset_right = 69.0
+offset_bottom = 25.0
+theme_override_font_sizes/normal_font_size = 4
+bbcode_enabled = true
+text = "Votre note finale est de :"
+
+[node name="Notes_count" type="RichTextLabel" parent="Notes/Notes_panel"]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 19.0
+offset_right = 86.0
+offset_bottom = 25.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 4
+bbcode_enabled = true
+text = "[color=yellow]0/20[/color]"
+
+[node name="TextureRect" type="TextureRect" parent="Notes/Notes_panel"]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 10.0
+offset_right = 133.0
+offset_bottom = 22.0
+
+[node name="TextureRect" type="TextureRect" parent="Notes/Notes_panel/TextureRect"]
+layout_mode = 0
+offset_left = 17.0
+offset_right = 31.0
+offset_bottom = 12.0
+
+[node name="TextureRect" type="TextureRect" parent="Notes/Notes_panel/TextureRect/TextureRect"]
+layout_mode = 0
+offset_left = 17.0
+offset_right = 31.0
+offset_bottom = 12.0
+
+[node name="Phrases" type="Button" parent="."]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 153.0
+offset_top = 10.0
+offset_right = 199.0
+offset_bottom = 27.0
+theme = ExtResource("1_w0kvv")
+text = "Phrases"
+
+[node name="Phrases_panel" type="Panel" parent="Phrases"]
+visible = false
+show_behind_parent = true
+layout_mode = 0
+offset_left = -83.0
+offset_top = 15.0
+offset_right = 94.0
+offset_bottom = 161.0
+theme = ExtResource("1_w0kvv")
+
+[node name="Vrai_panel" type="Panel" parent="Phrases/Phrases_panel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 167.0
+offset_bottom = 67.0
+
+[node name="Titre_vrai" type="RichTextLabel" parent="Phrases/Phrases_panel/Vrai_panel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 5.0
+offset_right = 153.0
+offset_bottom = 12.0
+theme_override_font_sizes/normal_font_size = 5
+bbcode_enabled = true
+text = "[center]Phrases [color=yellow] VRAI [/color]données par les spectateurs"
+
+[node name="Vrai_texte" type="RichTextLabel" parent="Phrases/Phrases_panel/Vrai_panel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 17.0
+offset_right = 153.0
+offset_bottom = 54.0
+theme_override_font_sizes/normal_font_size = 4
+bbcode_enabled = true
+
+[node name="Faux_panel" type="Panel" parent="Phrases/Phrases_panel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 77.0
+offset_right = 167.0
+offset_bottom = 139.0
+
+[node name="Titre_faux" type="RichTextLabel" parent="Phrases/Phrases_panel/Faux_panel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 5.0
+offset_right = 154.0
+offset_bottom = 12.0
+theme_override_font_sizes/normal_font_size = 5
+bbcode_enabled = true
+text = "[center]Phrases [color=yellow] FAUSSES [/color]données par les spectateurs"
+
+[node name="Faux_texte" type="RichTextLabel" parent="Phrases/Phrases_panel/Faux_panel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 17.0
+offset_right = 153.0
+offset_bottom = 58.0
+theme_override_font_sizes/normal_font_size = 4
+bbcode_enabled = true
+
+[node name="Script" type="Button" parent="."]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 199.0
+offset_top = 10.0
+offset_right = 247.0
+offset_bottom = 27.0
+theme = ExtResource("1_w0kvv")
+text = "Script"
+text_overrun_behavior = 1
+
+[node name="Script_panel" type="Panel" parent="Script"]
+visible = false
+show_behind_parent = true
+layout_mode = 0
+offset_left = -129.0
+offset_top = 15.0
+offset_right = 48.0
+offset_bottom = 161.0
+theme = ExtResource("1_w0kvv")
+
+[node name="Script_Text" type="RichTextLabel" parent="Script/Script_panel"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 10.0
+offset_right = 167.0
+offset_bottom = 142.0
+theme_override_font_sizes/normal_font_size = 4
+bbcode_enabled = true
+
+[connection signal="pressed" from="Notes" to="." method="_on_notes_pressed"]
+[connection signal="pressed" from="Phrases" to="." method="_on_phrases_pressed"]
+[connection signal="pressed" from="Script" to="." method="_on_script_pressed"]

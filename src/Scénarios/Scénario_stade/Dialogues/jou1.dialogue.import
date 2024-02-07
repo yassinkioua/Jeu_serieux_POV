@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://cxeyr10wt3g0a"
+path="res://.godot/imported/jou1.dialogue-cf76a0e8239a2bdf37e68ce0186ab1c0.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_stade/Dialogues/jou1.dialogue"
+dest_files=["res://.godot/imported/jou1.dialogue-cf76a0e8239a2bdf37e68ce0186ab1c0.tres"]
+
+[params]
+
+defaults=true

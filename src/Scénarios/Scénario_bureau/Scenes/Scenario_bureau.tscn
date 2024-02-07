@@ -1,0 +1,69 @@
+[gd_scene load_steps=16 format=3 uid="uid://dvprl1rbhdb1a"]
+
+[ext_resource type="Script" path="res://Scénarios/Scénario_bureau/Scenes/Scenario_bureau.gd" id="1_t1wpp"]
+[ext_resource type="PackedScene" uid="uid://dn5nsfjav7o1p" path="res://Scénarios/Scénario_bureau/NPC/Salariés/accueil/accueil.tscn" id="3_vfa7v"]
+[ext_resource type="PackedScene" uid="uid://c5mkjj0t6htno" path="res://Scénarios/Scénario_bureau/NPC/Patron/patron.tscn" id="4_5ju8w"]
+[ext_resource type="PackedScene" uid="uid://c44ww6jdgmj5o" path="res://Scénarios/Scénario_bureau/NPC/Salariés/emp1/emp1.tscn" id="5_a0xs1"]
+[ext_resource type="PackedScene" uid="uid://dlxhfwqyjbqvr" path="res://Scénarios/Scénario_bureau/NPC/Salariés/emp2/emp2.tscn" id="6_7cpnl"]
+[ext_resource type="PackedScene" uid="uid://ijqkdejfqolk" path="res://Scénarios/Scénario_bureau/NPC/Salariés/emp3/emp3.tscn" id="7_mt5o8"]
+[ext_resource type="PackedScene" uid="uid://w2lj82xrbybb" path="res://Scénarios/Scénario_bureau/NPC/Salariés/emp4/emp4.tscn" id="8_8e0v0"]
+[ext_resource type="PackedScene" uid="uid://dggrtrs0b57ho" path="res://Scénarios/Scénario_bureau/NPC/Salariés/emp5/emp5.tscn" id="9_qrntl"]
+[ext_resource type="PackedScene" uid="uid://ba5fp2nsvoivi" path="res://Scénarios/Scénario_bureau/Superviseur/superviseur.tscn" id="10_lf8d8"]
+[ext_resource type="PackedScene" uid="uid://ciae075mf3bog" path="res://Scénarios/Scénario_bureau/NPC/Salariés/emp6/emp6.tscn" id="11_mlu14"]
+[ext_resource type="PackedScene" uid="uid://nsv7jm4xwls2" path="res://Scénarios/Scénario_bureau/NPC/Salariés/emp7/emp7.tscn" id="12_fpagt"]
+[ext_resource type="PackedScene" uid="uid://dvxduvy6uefx2" path="res://Scénarios/Scénario_bureau/NPC/Salariés/emp8/emp8.tscn" id="13_artmx"]
+[ext_resource type="PackedScene" uid="uid://cmunjps3kdv4m" path="res://Scénarios/Scénario_bureau/NPC/Salariés/emp9/emp9.tscn" id="14_elrhm"]
+[ext_resource type="PackedScene" uid="uid://dl8rmrk3c3u7p" path="res://Scénarios/Scénario_bureau/NPC/Salariés/emp10/emp10.tscn" id="15_76ftr"]
+[ext_resource type="PackedScene" uid="uid://6xd80p7g1kll" path="res://Scénarios/Scénario_bureau/NPC/Salariés/emp11/emp11.tscn" id="16_6uvu0"]
+
+[node name="Scenario_bureau" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_t1wpp")
+
+[node name="accueil" parent="." instance=ExtResource("3_vfa7v")]
+position = Vector2(-83, -39)
+
+[node name="patron" parent="." instance=ExtResource("4_5ju8w")]
+position = Vector2(-208, 53)
+
+[node name="emp1" parent="." instance=ExtResource("5_a0xs1")]
+z_index = 1
+position = Vector2(24, -130)
+
+[node name="emp2" parent="." instance=ExtResource("6_7cpnl")]
+position = Vector2(276, -201)
+
+[node name="emp3" parent="." instance=ExtResource("7_mt5o8")]
+z_index = 1
+position = Vector2(136, -226)
+
+[node name="emp4" parent="." instance=ExtResource("8_8e0v0")]
+position = Vector2(210, 36)
+
+[node name="emp5" parent="." instance=ExtResource("9_qrntl")]
+position = Vector2(-231, -194)
+
+[node name="Supervisor" parent="." instance=ExtResource("10_lf8d8")]
+position = Vector2(7, -19)
+
+[node name="emp6" parent="." instance=ExtResource("11_mlu14")]
+z_index = 1
+position = Vector2(-259, -209)
+
+[node name="emp7" parent="." instance=ExtResource("12_fpagt")]
+position = Vector2(219, 57)
+
+[node name="emp8" parent="." instance=ExtResource("13_artmx")]
+position = Vector2(237, 40)
+
+[node name="emp9" parent="." instance=ExtResource("14_elrhm")]
+z_index = 1
+position = Vector2(200, -114)
+
+[node name="emp10" parent="." instance=ExtResource("15_76ftr")]
+z_index = 1
+position = Vector2(-7, -226)
+
+[node name="emp11" parent="." instance=ExtResource("16_6uvu0")]
+z_index = 1
+position = Vector2(297, -146)

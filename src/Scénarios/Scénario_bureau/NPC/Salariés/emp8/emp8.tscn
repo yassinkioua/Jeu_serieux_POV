@@ -1,0 +1,69 @@
+[gd_scene load_steps=11 format=3 uid="uid://dvxduvy6uefx2"]
+
+[ext_resource type="Script" path="res://Scénarios/Scénario_bureau/NPC/Salariés/emp8/emp8.gd" id="1_jwwy6"]
+[ext_resource type="Texture2D" uid="uid://c0a2bc2jjo8xl" path="res://Scénarios/Scénario_bureau/NPC/Salariés/emp8/emp8.png" id="2_q6i2o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fg53v"]
+atlas = ExtResource("2_q6i2o")
+region = Rect2(192, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tid0q"]
+atlas = ExtResource("2_q6i2o")
+region = Rect2(208, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pgx57"]
+atlas = ExtResource("2_q6i2o")
+region = Rect2(224, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_170bi"]
+atlas = ExtResource("2_q6i2o")
+region = Rect2(240, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qivqe"]
+atlas = ExtResource("2_q6i2o")
+region = Rect2(256, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2mh0b"]
+atlas = ExtResource("2_q6i2o")
+region = Rect2(272, 32, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2qni0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fg53v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tid0q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pgx57")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_170bi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qivqe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2mh0b")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m0w82"]
+radius = 5.0
+height = 16.0
+
+[node name="emp8" type="StaticBody2D"]
+script = ExtResource("1_jwwy6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_2qni0")
+animation = &"left"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7)
+shape = SubResource("CapsuleShape2D_m0w82")

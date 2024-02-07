@@ -1,0 +1,11 @@
+~ start
+set VarPrinci.update_talking(true)
+set Data.set_end_dialog(true)
+if Data.selectedScenarioCase == "s2_c2"
+	Patron: *embarassé* Je pense à ajuster l'équipe, envisageant des changements nécessaires pour améliorer l'efficacité globale...
+	set VarPrinci.update_talking(false)
+	=> END
+elif Data.selectedScenarioCase == "s2_c1"
+	Patron: *sérieux* Je n'aime pas les rumeurs qui circulent en ce moment, c'est pourquoi je les convoque...
+	set VarPrinci.update_talking(false)
+	=> END

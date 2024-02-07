@@ -1,0 +1,68 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://bpnw0dunptupl"]
+
+[ext_resource type="FontFile" uid="uid://dgcwxm1d3emxm" path="res://Font/Volter__28Goldfish_29.ttf" id="1_bqkux"]
+[ext_resource type="FontFile" uid="uid://duok8cs18sd6p" path="res://UI/menu/core/assets/Early GameBoy.ttf" id="2_fovbb"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5ow66"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xcb1e"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g0nwk"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ykn5w"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jiq1y"]
+
+[resource]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_disabled_color = Color(0, 0, 0, 1)
+Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Button/colors/icon_disabled_color = Color(0, 0, 0, 1)
+Button/colors/icon_focus_color = Color(0, 0, 0, 1)
+Button/colors/icon_hover_color = Color(0, 0, 0, 1)
+Button/colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+Button/colors/icon_normal_color = Color(0, 0, 0, 1)
+Button/colors/icon_pressed_color = Color(0, 0, 0, 1)
+Button/constants/h_separation = 0
+Button/constants/icon_max_width = 0
+Button/constants/outline_size = 0
+Button/font_sizes/font_size = 6
+Button/fonts/font = ExtResource("1_bqkux")
+Button/styles/disabled = SubResource("StyleBoxTexture_5ow66")
+Button/styles/focus = SubResource("StyleBoxTexture_xcb1e")
+Button/styles/hover = SubResource("StyleBoxTexture_g0nwk")
+Button/styles/normal = SubResource("StyleBoxTexture_ykn5w")
+Button/styles/pressed = SubResource("StyleBoxTexture_jiq1y")
+RichTextLabel/colors/default_color = Color(1, 1, 1, 1)
+RichTextLabel/colors/font_outline_color = Color(0, 0, 0, 1)
+RichTextLabel/colors/font_selected_color = Color(0, 0, 0, 1)
+RichTextLabel/colors/font_shadow_color = Color(0, 0, 0, 1)
+RichTextLabel/colors/selection_color = Color(0, 0, 0, 1)
+RichTextLabel/colors/table_border = Color(0, 0, 0, 1)
+RichTextLabel/colors/table_even_row_bg = Color(0, 0, 0, 1)
+RichTextLabel/colors/table_odd_row_bg = Color(0, 0, 0, 1)
+RichTextLabel/constants/line_separation = 0
+RichTextLabel/constants/outline_size = 0
+RichTextLabel/constants/shadow_offset_x = 0
+RichTextLabel/constants/shadow_offset_y = 0
+RichTextLabel/constants/shadow_outline_size = 0
+RichTextLabel/constants/table_h_separation = 0
+RichTextLabel/constants/table_v_separation = 0
+RichTextLabel/constants/text_highlight_h_padding = 0
+RichTextLabel/constants/text_highlight_v_padding = 0
+RichTextLabel/font_sizes/bold_font_size = 16
+RichTextLabel/font_sizes/bold_italics_font_size = 16
+RichTextLabel/font_sizes/italics_font_size = 16
+RichTextLabel/font_sizes/mono_font_size = 16
+RichTextLabel/font_sizes/normal_font_size = 11
+RichTextLabel/fonts/bold_font = null
+RichTextLabel/fonts/bold_italics_font = null
+RichTextLabel/fonts/italics_font = null
+RichTextLabel/fonts/mono_font = null
+RichTextLabel/fonts/normal_font = ExtResource("2_fovbb")
+RichTextLabel/styles/focus = null
+RichTextLabel/styles/normal = null

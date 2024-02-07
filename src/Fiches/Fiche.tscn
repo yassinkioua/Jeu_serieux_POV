@@ -1,0 +1,239 @@
+[gd_scene load_steps=8 format=3 uid="uid://dkrwcdofyid3h"]
+
+[ext_resource type="Script" path="res://Fiches/Fiche.gd" id="1_vbb1g"]
+[ext_resource type="Texture2D" uid="uid://dexfphneljqnm" path="res://Assets/Modern UI/Portrait/portrait.png" id="3_5qwkj"]
+[ext_resource type="Texture2D" uid="uid://b4j1t166v1tli" path="res://Assets/Modern UI/Modern_UI_Style_2.png" id="3_25dh5"]
+[ext_resource type="FontFile" uid="uid://dgcwxm1d3emxm" path="res://Font/Volter__28Goldfish_29.ttf" id="4_ev8rf"]
+[ext_resource type="Theme" uid="uid://cvy511hvw0kle" path="res://Fiches/fiche_theme.tres" id="5_n5wj2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dgbu2"]
+texture = ExtResource("3_25dh5")
+texture_margin_left = 17.4919
+texture_margin_top = 8.37673
+texture_margin_right = 17.9743
+texture_margin_bottom = 7.38264
+region_rect = Rect2(245, 466, 22, 11)
+
+[sub_resource type="Theme" id="Theme_811uw"]
+Panel/styles/panel = SubResource("StyleBoxTexture_dgbu2")
+
+[node name="Fiche" type="Control"]
+z_index = 4096
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_vbb1g")
+metadata/_edit_vertical_guides_ = [0.0, 320.0, 286.0, 80.0, 230.0]
+metadata/_edit_horizontal_guides_ = [0.0, 180.0, 55.0]
+
+[node name="Fiche_a" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 12.0
+offset_right = 135.0
+offset_bottom = 168.0
+theme = SubResource("Theme_811uw")
+
+[node name="PortraitPanel" type="Panel" parent="Fiche_a"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 7.0
+offset_right = 45.0
+offset_bottom = 30.0
+
+[node name="a_sprite" type="Sprite2D" parent="Fiche_a/PortraitPanel"]
+position = Vector2(19.8438, 12.5)
+scale = Vector2(0.984375, 0.809524)
+texture = ExtResource("3_5qwkj")
+
+[node name="Name" type="RichTextLabel" parent="Fiche_a"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 15.0
+offset_right = 98.0
+offset_bottom = 23.0
+theme = ExtResource("5_n5wj2")
+theme_override_font_sizes/normal_font_size = 6
+bbcode_enabled = true
+text = "> JACK"
+scroll_active = false
+
+[node name="TrueComs" type="Panel" parent="Fiche_a"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 39.0
+offset_right = 96.0
+offset_bottom = 83.0
+pivot_offset = Vector2(70, 44)
+
+[node name="Title" type="RichTextLabel" parent="Fiche_a/TrueComs"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 90.0
+offset_bottom = 12.0
+theme = ExtResource("5_n5wj2")
+theme_override_font_sizes/normal_font_size = 4
+bbcode_enabled = true
+text = "[center] Informations données"
+scroll_active = false
+
+[node name="TrueText" type="RichTextLabel" parent="Fiche_a/TrueComs"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 12.0
+offset_right = 88.0
+offset_bottom = 40.0
+theme = ExtResource("5_n5wj2")
+theme_override_font_sizes/normal_font_size = 3
+bbcode_enabled = true
+text = "> Jack avait attaqué en premier
+> Jack était dealer de drogue
+> Il possède un casier judiciaire"
+scroll_active = false
+
+[node name="SubjComs" type="Panel" parent="Fiche_a"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 99.0
+offset_right = 96.0
+offset_bottom = 143.0
+pivot_offset = Vector2(70, 44)
+
+[node name="Title" type="RichTextLabel" parent="Fiche_a/SubjComs"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 90.0
+offset_bottom = 12.0
+theme = ExtResource("5_n5wj2")
+theme_override_font_sizes/normal_font_size = 4
+bbcode_enabled = true
+text = "[center] Informations par les spectateurs"
+scroll_active = false
+
+[node name="SubjText" type="RichTextLabel" parent="Fiche_a/SubjComs"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 12.0
+offset_right = 88.0
+offset_bottom = 40.0
+theme = ExtResource("5_n5wj2")
+theme_override_font_sizes/normal_font_size = 3
+bbcode_enabled = true
+text = "> Jack avait attaqué en premier
+> Jack était dealer de drogue
+> Il possède un casier judiciaire"
+
+[node name="Fiche_b" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 12.0
+offset_right = 285.0
+offset_bottom = 168.0
+theme = SubResource("Theme_811uw")
+
+[node name="PortraitPanel" type="Panel" parent="Fiche_b"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 7.0
+offset_right = 45.0
+offset_bottom = 30.0
+
+[node name="b_sprite" type="Sprite2D" parent="Fiche_b/PortraitPanel"]
+position = Vector2(20.375, 12.5)
+scale = Vector2(0.9375, 0.809524)
+texture = ExtResource("3_5qwkj")
+
+[node name="Name" type="RichTextLabel" parent="Fiche_b"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 15.0
+offset_right = 98.0
+offset_bottom = 23.0
+theme = ExtResource("5_n5wj2")
+theme_override_font_sizes/normal_font_size = 6
+bbcode_enabled = true
+text = "> JACK"
+scroll_active = false
+
+[node name="TrueComs" type="Panel" parent="Fiche_b"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 39.0
+offset_right = 96.0
+offset_bottom = 83.0
+pivot_offset = Vector2(70, 44)
+
+[node name="Title" type="RichTextLabel" parent="Fiche_b/TrueComs"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 90.0
+offset_bottom = 12.0
+theme = ExtResource("5_n5wj2")
+theme_override_font_sizes/normal_font_size = 4
+bbcode_enabled = true
+text = "[center] Informations données"
+scroll_active = false
+
+[node name="TrueText" type="RichTextLabel" parent="Fiche_b/TrueComs"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 12.0
+offset_right = 88.0
+offset_bottom = 40.0
+theme = ExtResource("5_n5wj2")
+theme_override_font_sizes/normal_font_size = 3
+bbcode_enabled = true
+text = "> Jack avait attaqué en premier
+> Jack était dealer de drogue
+> Il possède un casier judiciaire"
+
+[node name="SubjComs" type="Panel" parent="Fiche_b"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 99.0
+offset_right = 96.0
+offset_bottom = 143.0
+pivot_offset = Vector2(70, 44)
+
+[node name="Title" type="RichTextLabel" parent="Fiche_b/SubjComs"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 90.0
+offset_bottom = 12.0
+theme = ExtResource("5_n5wj2")
+theme_override_font_sizes/normal_font_size = 4
+bbcode_enabled = true
+text = "[center] Informations par les spectateurs"
+scroll_active = false
+
+[node name="SubjText" type="RichTextLabel" parent="Fiche_b/SubjComs"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 12.0
+offset_right = 88.0
+offset_bottom = 40.0
+theme = ExtResource("5_n5wj2")
+theme_override_font_sizes/normal_font_size = 3
+bbcode_enabled = true
+text = "> Jack avait attaqué en premier
+> Jack était dealer de drogue
+> Il possède un casier judiciaire"
+
+[node name="exit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 146.0
+offset_top = 151.0
+offset_right = 173.0
+offset_bottom = 167.0
+theme = ExtResource("5_n5wj2")
+theme_override_colors/font_color = Color(0.415686, 0.321569, 0.278431, 1)
+theme_override_fonts/font = ExtResource("4_ev8rf")
+theme_override_font_sizes/font_size = 5
+text = "EXIT"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]

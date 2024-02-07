@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://c7m2v6oqpc5ao"
+path="res://.godot/imported/spec7.dialogue-96e89504035a51b78f8c32662ac3dc9e.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_stade/Dialogues/spec7.dialogue"
+dest_files=["res://.godot/imported/spec7.dialogue-96e89504035a51b78f8c32662ac3dc9e.tres"]
+
+[params]
+
+defaults=true

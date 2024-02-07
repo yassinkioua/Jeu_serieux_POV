@@ -1,0 +1,60 @@
+[gd_scene load_steps=15 format=3 uid="uid://bhcahsogb0nde"]
+
+[ext_resource type="Script" path="res://Scénarios/Scénario_Sds/Scenes/Scenario_sds.gd" id="1_j52gx"]
+[ext_resource type="PackedScene" uid="uid://bajwh1oyer5uw" path="res://Scénarios/Scénario_Sds/Superviseur/superviseur.tscn" id="2_ew0yq"]
+[ext_resource type="PackedScene" uid="uid://p2bmqc3enw3p" path="res://Scénarios/Scénario_Sds/NPC/Coach/coach.tscn" id="4_nxm2h"]
+[ext_resource type="PackedScene" uid="uid://brl3oj7xiky1t" path="res://Scénarios/Scénario_Sds/NPC/Accueil/accueil.tscn" id="5_jra62"]
+[ext_resource type="PackedScene" uid="uid://bix4hkxmw6y28" path="res://Scénarios/Scénario_Sds/NPC/Sportif/Sportif1/Sportif1.tscn" id="6_yvxbs"]
+[ext_resource type="PackedScene" uid="uid://bv4qadi74y5qd" path="res://Scénarios/Scénario_Sds/NPC/Sportif/Sportif2/sportif2.tscn" id="7_ldq2g"]
+[ext_resource type="PackedScene" uid="uid://cyaohw3qiqxx" path="res://Scénarios/Scénario_Sds/NPC/Sportif/Sportif3/sportif3.tscn" id="8_ct6qj"]
+[ext_resource type="PackedScene" uid="uid://3j8payljbneh" path="res://Scénarios/Scénario_Sds/NPC/Sportif/Sportif4/sportif4.tscn" id="9_2ayky"]
+[ext_resource type="PackedScene" uid="uid://4pvf0xop53r7" path="res://Scénarios/Scénario_Sds/NPC/Sportif/Sportif5/sportif5.tscn" id="10_5j4pm"]
+[ext_resource type="PackedScene" uid="uid://b3eul35cm5du8" path="res://Scénarios/Scénario_Sds/NPC/Sportif/Sportif6/sportif6.tscn" id="11_erey2"]
+[ext_resource type="PackedScene" uid="uid://cv8ienkfno4nf" path="res://Scénarios/Scénario_Sds/NPC/Sportif/Sportif7/sportif7.tscn" id="12_2eby0"]
+[ext_resource type="PackedScene" uid="uid://btirgk4wp5a14" path="res://Scénarios/Scénario_Sds/NPC/Sportif/sportif8/sportif8.tscn" id="13_uc4ll"]
+[ext_resource type="PackedScene" uid="uid://bd4g65juis302" path="res://Scénarios/Scénario_Sds/NPC/Sportif/sportif9/sportif9.tscn" id="14_h5hm4"]
+[ext_resource type="PackedScene" uid="uid://cryi0evl8unx0" path="res://Scénarios/Scénario_Sds/NPC/Sportif/sportif10/sportif10.tscn" id="15_ysjdd"]
+
+[node name="Scenario_Sds" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_j52gx")
+
+[node name="Supervisor" parent="." instance=ExtResource("2_ew0yq")]
+position = Vector2(-210, 179)
+
+[node name="coach" parent="." instance=ExtResource("4_nxm2h")]
+position = Vector2(-157, -14)
+
+[node name="accueil" parent="." instance=ExtResource("5_jra62")]
+position = Vector2(129, 169)
+
+[node name="sportif1" parent="." instance=ExtResource("6_yvxbs")]
+position = Vector2(271, -14)
+
+[node name="sportif2" parent="." instance=ExtResource("7_ldq2g")]
+position = Vector2(289, 90)
+
+[node name="sportif3" parent="." instance=ExtResource("8_ct6qj")]
+position = Vector2(-22, 32)
+
+[node name="sportif4" parent="." instance=ExtResource("9_2ayky")]
+position = Vector2(8, -49)
+
+[node name="sportif5" parent="." instance=ExtResource("10_5j4pm")]
+position = Vector2(218, -31)
+
+[node name="sportif6" parent="." instance=ExtResource("11_erey2")]
+y_sort_enabled = true
+position = Vector2(74, 81)
+
+[node name="sportif7" parent="." instance=ExtResource("12_2eby0")]
+position = Vector2(195, 58)
+
+[node name="sportif8" parent="." instance=ExtResource("13_uc4ll")]
+position = Vector2(179, -12)
+
+[node name="sportif9" parent="." instance=ExtResource("14_h5hm4")]
+position = Vector2(113, -21)
+
+[node name="sportif10" parent="." instance=ExtResource("15_ysjdd")]
+position = Vector2(-46, 137)

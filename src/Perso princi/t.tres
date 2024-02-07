@@ -1,0 +1,6 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://c2vd6c5nxdcyd"]
+
+[ext_resource type="Texture2D" uid="uid://7rb1hupngq7b" path="res://Assets/Modern UI/backpack.png" id="1_laj1k"]
+
+[resource]
+texture = ExtResource("1_laj1k")

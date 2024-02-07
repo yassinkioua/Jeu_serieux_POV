@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://ctshshchlgtr7"
+path="res://.godot/imported/Alex.dialogue-85a737c5026aeb66d3ee0bbe2592d668.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_Sds/Actor_sds/Case 2/Alex/Alex.dialogue"
+dest_files=["res://.godot/imported/Alex.dialogue-85a737c5026aeb66d3ee0bbe2592d668.tres"]
+
+[params]
+
+defaults=true

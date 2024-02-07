@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://cbns0vvhmv541"
+path="res://.godot/imported/emp5.dialogue-9794b76924ad1650a749e4567e8df380.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_bureau/Dialogues/emp5.dialogue"
+dest_files=["res://.godot/imported/emp5.dialogue-9794b76924ad1650a749e4567e8df380.tres"]
+
+[params]
+
+defaults=true

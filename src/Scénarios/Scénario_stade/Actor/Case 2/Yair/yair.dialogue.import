@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dg7o0o0bveu7e"
+path="res://.godot/imported/yair.dialogue-77be6e634aa3883ce2f72a01a1848b99.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_stade/Actor/Case 2/Yair/yair.dialogue"
+dest_files=["res://.godot/imported/yair.dialogue-77be6e634aa3883ce2f72a01a1848b99.tres"]
+
+[params]
+
+defaults=true

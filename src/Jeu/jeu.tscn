@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmbqxmb01u2is"]
+
+[ext_resource type="PackedScene" uid="uid://dohthwmmuycfa" path="res://UI/ui.tscn" id="1_wha6o"]
+[ext_resource type="AudioStream" uid="uid://cj7nxhiu5hj07" path="res://UI/menu/background/assets_menu/cyberpunk-street.wav" id="2_owbxl"]
+
+[node name="Jeu" type="Node2D"]
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_owbxl")
+volume_db = -47.612
+autoplay = true
+bus = &"Music"
+
+[node name="UI" parent="." instance=ExtResource("1_wha6o")]

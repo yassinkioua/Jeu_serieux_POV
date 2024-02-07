@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://qwavsmxihuhf"
+path="res://.godot/imported/jack.dialogue-8416bad1d3966c7ded44b7eb8ce44442.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_stade/Actor/Case 1/Jack/jack.dialogue"
+dest_files=["res://.godot/imported/jack.dialogue-8416bad1d3966c7ded44b7eb8ce44442.tres"]
+
+[params]
+
+defaults=true

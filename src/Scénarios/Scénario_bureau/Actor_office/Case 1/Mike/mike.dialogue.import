@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://by1o280kkvi16"
+path="res://.godot/imported/mike.dialogue-72073f6ba7d4ea94f27d5a2c45cdc5f3.tres"
+
+[deps]
+
+source_file="res://Scénarios/Scénario_bureau/Actor_office/Case 1/Mike/mike.dialogue"
+dest_files=["res://.godot/imported/mike.dialogue-72073f6ba7d4ea94f27d5a2c45cdc5f3.tres"]
+
+[params]
+
+defaults=true
