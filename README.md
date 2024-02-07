@@ -50,16 +50,16 @@ Nous avons choisi la licence MIT pour notre jeu, "POV : Perception of Violence",
 ## Captures d'écran
 
 ### Capture d'écran du spawn avec flèche directionnel
-![Screenshot spawn et fleche](Capture ecran/spawn.png)
+![Screenshot spawn et fleche](Capture_ecran/spawn.png)
 
 ### Capture d'écran discussion avec le superviseur
-![Screenshot discussion superviseur](Capture ecran/discussion_superviseur.png)
+![Screenshot discussion superviseur](Capture_ecran/discussion_superviseur.png)
 
 ### Capture d'écran des fiches personnages
-![Screenshot fiche personnage](Capture ecran/fiche.png)
+![Screenshot fiche personnage](Capture_ecran/fiche.png)
 
 ### Capture d'écran des notes
-![Screenshot note](Capture ecran/note.png)
+![Screenshot note](Capture_ecran/note.png)
 
 ## Lien de téléchargement
 
