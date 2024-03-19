@@ -1,9 +1,5 @@
 # <div align="center">Perception Of Violence</div>
 
-#### Nom du groupe : KGB
-
-#### Code du groupe : MAJ23-T3-E
-
 #### Participants :
 
 - Ryan GOURDON
