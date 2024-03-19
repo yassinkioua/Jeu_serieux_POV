@@ -1,11 +1,5 @@
 # <div align="center">Perception Of Violence</div>
 
-#### Participants :
-
-- Ryan GOURDON
-- Romain BOADE
-- Yassin KIOUA
-
 ## Objectif pédagogique
 
 Le joueur devra se rendre dans plusieurs scénarios où il devra résoudre divers conflits portant sur tous les types de violences possibles, tels que psychologiques, verbales, etc., et tout cela, à titre éducatif. L'objectif est de faire comprendre au joueur que chaque personne peut avoir une perception différente de la violence et que cela peut mener à des fins multiples.
@@ -62,3 +56,11 @@ Nous avons choisi la licence MIT pour notre jeu, "POV : Perception of Violence",
 
 ### Capture d'écran des notes
 ![Screenshot note](Capture_ecran/note.png)
+
+
+#### Participants :
+
+- Ryan GOURDON
+- Romain BOADE
+- Yassin KIOUA
+
