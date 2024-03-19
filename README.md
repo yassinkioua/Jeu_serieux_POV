@@ -10,6 +10,12 @@
 
 Le joueur devra se rendre dans plusieurs scénarios où il devra résoudre divers conflits portant sur tous les types de violences possibles, tels que psychologiques, verbales, etc., et tout cela, à titre éducatif. L'objectif est de faire comprendre au joueur que chaque personne peut avoir une perception différente de la violence et que cela peut mener à des fins multiples.
 
+## Lien de téléchargement
+
+Pour ouvrir le projet, il est nécessaire de posséder le logiciel et moteur de jeu Godot Engine, disponible ici en téléchargement : **[Godot Engine](https://godotengine.org/download)**
+
+Vous pouvez cloner l'ensemble du [dépôt Git](https://github.com/yassinkioua/Jeu_serieux_POV)  ou si cela est plus pratique, vous pouvez également récupérer uniquement le code source en suivant [ce lien](./src) pour poursuivre le projet.
+
 ## Type de jeu et mécanismes d'apprentissage
 
 Dans ce jeu, le joueur incarne un enquêteur junior qui sera suivi par son superviseur. Il devra essayer de résoudre les différents conflits. Pour cela, il pourra discuter avec les personnes autour de lui dans la zone, utiliser les fiches que le superviseur lui donnera pour obtenir des premiers antécédents des protagonistes. Dès que le joueur se sentira prêt à régler le conflit, il pourra exprimer son opinion à son superviseur, et il pourra utiliser la méthode qui semble la meilleure au joueur pour régler ce conflit.
@@ -56,10 +62,3 @@ Nous avons choisi la licence MIT pour notre jeu, "POV : Perception of Violence",
 
 ### Capture d'écran des notes
 ![Screenshot note](Capture_ecran/note.png)
-
-## Lien de téléchargement
-
-Pour ouvrir le projet, il est nécessaire de posséder le logiciel et moteur de jeu Godot Engine, disponible ici en téléchargement : **[Godot Engine](https://godotengine.org/download)**
-
-
-Vous pouvez cloner l'ensemble du [dépôt Git](https://github.com/yassinkioua/Jeu_serieux_POV)  ou si cela est plus pratique, vous pouvez également récupérer uniquement le code source en suivant [ce lien](./src) pour poursuivre le projet.
